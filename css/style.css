@@ -4,3 +4,8 @@
 .avatar.hsr.rarity-4{
     background: linear-gradient(180deg,#343659,#8a5fcc 53%);
 }
+
+.content{
+    background-color: #23242a;
+    color: #fff;
+}
