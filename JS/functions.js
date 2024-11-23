@@ -3,7 +3,7 @@ function createGallery() {
 }
 
 function createCharacterCard(characterName) {
-    const loc_5star = "/../images/characters/5_stars/" + characterName + ".webp";
+    const loc_5star = "/images/characters/5_stars/" + characterName + ".webp";
 
     let topDiv = document.createElement("div");
     let img = document.createElement("img");
