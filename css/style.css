@@ -1,11 +1,40 @@
-.avatar.hsr.rarity-5{
-    background: linear-gradient(180deg,#885550,#c9a36a 53%);
-}
-.avatar.hsr.rarity-4{
-    background: linear-gradient(180deg,#343659,#8a5fcc 53%);
+.rarity-5 {
+    background: linear-gradient(180deg, #885550, #c9a36a 53%);
 }
 
-body{
+.rarity-4 {
+    background: linear-gradient(180deg, #343659, #8a5fcc 53%);
+}
+
+body {
     background-color: #23242a;
     color: #fff;
+}
+
+span {
+    box-sizing: border-box;
+}
+
+.hsr-cards {
+    grid-gap: 10px 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.card {
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+}
+
+.image-wrapper{
+    display: inline-block;
 }
