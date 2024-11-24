@@ -50,12 +50,12 @@ function createCharacterData(entry, minorDiv) {
         const fourStarCharacter = characters["featured4"]
 
         const featuredDiv = document.createElement("div");
-        featuredDiv.className = "character featured rarity-5";
+        featuredDiv.className = "character featured";
         const rerunDiv = document.createElement("div");
-        rerunDiv.className = "character rerun rarity-5";
+        rerunDiv.className = "character rerun";
 
         const fourStarDiv = document.createElement("div");
-        fourStarDiv.className = "character rarity-4";
+        fourStarDiv.className = "character";
 
         if (featuredCharacter != null) {
             featuredDiv.append(createCharacterCard(featuredCharacter, 5));
@@ -84,9 +84,10 @@ function createCharacterCard(characterName, rarity) {
     const loc_5star = "images/characters/5_stars/" + characterName + ".webp";
     const loc_4star = "images/characters/4_stars/" + characterName + ".webp";
     const imgDiv = document.createElement("div");
-    imgDiv.className = "rarity-" + rarity;
+    imgDiv.className = "characterCard rarity-" + rarity;
 
     let img = document.createElement("img");
+    img.className="characterIcon"
     if (rarity === 4) {
         img.src = loc_4star;
     } else if (rarity === 5) {
@@ -96,8 +97,6 @@ function createCharacterCard(characterName, rarity) {
     }
 
     img.alt = characterName;
-    img.width = 140 * 2;
-    img.height = 189 * 2;
 
     imgDiv.append(img);
     return imgDiv;
