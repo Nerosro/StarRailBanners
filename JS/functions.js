@@ -10,17 +10,17 @@ function createGallery(jsonData) {
 
     for (let i = 0; i < majorVersionNumber.length; i++) {
         let characters = characterData[majorVersionNumber[i]];
-        let versionDiv = document.createElement("div");
-        versionDiv.id = "version_" + majorVersionNumber[i];
+        let majorVersionDiv = document.createElement("div");
+        majorVersionDiv.className = "version_" + majorVersionNumber[i];
 
         for (let j = 0; j < characters.length; j++) {
             const span = document.createElement("span")
             span.append(
                 createCharacterCard(characters[j])
             );
-            versionDiv.append(span)
+            majorVersionDiv.append(span)
         }
-        rootDiv.append(versionDiv);
+        rootDiv.append(majorVersionDiv);
     }
     topNode.append(rootDiv);
 }
@@ -40,22 +40,6 @@ function createCharacterCard(characterName) {
     return imgDiv;
 }
 
-/*Will return an object that looks like below
-        {
-            "1":[
-                character1,
-                character2,
-                character3,
-                etc
-            ],
-            "2":[
-                character1,
-                character2,
-                character3,
-                etc
-            ]
-        }
-    */
 function parseJSONObject(json) {
     let versionObject = {};
     for (let i = 0; i < json.bannerHistory.length; i++) {
@@ -69,10 +53,18 @@ function parseJSONObject(json) {
             if (characters[j].featured !== undefined && characters[j].featured != null) {
                 versionObject[majorVersion].push(characters[j].featured)
             }
-            // let rerun = characters[j].rerun;
-            // if (rerun != undefined && rerun != null){
-            //     versionObject[majorVersion].push(...rerun);
-            // }
+
+            let rerun = characters[j].rerun;
+            if (rerun !== undefined && rerun != null){
+                if(Array.isArray(rerun)){
+                    for(let k = 0; k < rerun.length; k++){
+                        versionObject[majorVersion].push(rerun[k]);
+                    }
+                }
+                else{
+                    versionObject[majorVersion].push(rerun);
+                }
+            }
         }
     }
     return versionObject;

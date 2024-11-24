@@ -380,7 +380,7 @@
         {
           "banner": 1,
           "featured": "The Herta",
-          "rerun": "",
+          "rerun": null,
           "featured4": [
             "",
             "",
@@ -390,7 +390,7 @@
         {
           "banner": 2,
           "featured": "Aglaea",
-          "rerun": "",
+          "rerun": null,
           "featured4": [
             "",
             "",

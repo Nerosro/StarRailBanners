@@ -16,19 +16,14 @@ span {
 }
 
 .hsr-cards {
-    grid-gap: 10px 5px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 280px);
     justify-content: space-between;
-    margin-top: 15px;
 }
 
 .card {
     word-wrap: break-word;
     background-clip: border-box;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: .25rem;
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -37,6 +32,24 @@ span {
 
 #root{
     display: grid;
-    grid-template-columns: 280px 280px 280px;
+    grid-template-rows: repeat(3, 385px);
+    row-gap: 3px;
+}
+
+.version_1{
+    display: grid;
+    grid-template-columns: repeat(18, 280px);
+    column-gap: 3px;
+}
+
+.version_2{
+    display: grid;
+    grid-template-columns: repeat(34, 280px);
+    column-gap: 3px;
+}
+
+.version_3{
+    display: grid;
+    grid-template-columns: repeat(14, 280px);
     column-gap: 3px;
 }
