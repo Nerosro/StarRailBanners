@@ -32,7 +32,7 @@ body {
     flex-direction: row;
 }
 
-.rerun, .featured{
+.character{
     display: flex;
     flex-direction: row;
 }
@@ -41,6 +41,8 @@ body {
     margin-left: 5px;
     margin-bottom: 5px;
 }
+
+
 .characterIcon{
     width: 140px;
     height: 189px;

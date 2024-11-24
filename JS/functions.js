@@ -73,7 +73,7 @@ function createCharacterData(entry, minorDiv) {
         if (fourStarCharacter != null) {
             for (const character of fourStarCharacter) {
                 //console.info(character)
-                //fourStarDiv.append(createCharacterCard(character, 4))
+                fourStarDiv.append(createCharacterCard(character, 4))
                 minorDiv.append(fourStarDiv)
             }
         }
