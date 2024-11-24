@@ -7,14 +7,8 @@
 }
 
 body {
-    background-color: #23242a;
+    background: #23242a !important;
     color: #fff;
-}
-
-.hsr-cards {
-    display: flex;
-    grid-template-columns: repeat(auto-fill, 280px);
-    justify-content: space-between;
 }
 
 .root{
@@ -22,14 +16,8 @@ body {
     flex-direction: column;
 }
 
-.major{
-    display: flex;
-    flex-direction: column;
-}
-
 .minor{
     display: flex;
-    flex-direction: row;
 }
 
 .character{
@@ -42,26 +30,7 @@ body {
     margin-bottom: 5px;
 }
 
-
-.characterIcon{
+.characterIcon {
     width: 140px;
     height: 189px;
 }
-
-/*#version-1x{*/
-/*    display: grid;*/
-/*    grid-template-columns: repeat(8, 280px);*/
-/*    column-gap: 3px;*/
-/*}*/
-
-/*#version-2x{*/
-/*    display: grid;*/
-/*    grid-template-columns: repeat(9, 280px);*/
-/*    column-gap: 3px;*/
-/*}*/
-
-/*#version-3x{*/
-/*    display: grid;*/
-/*    grid-template-columns: repeat(2, 280px);*/
-/*    column-gap: 3px;*/
-/*}*/

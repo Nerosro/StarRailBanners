@@ -2,6 +2,7 @@ function createGallery(jsonData) {
     const topNode = document.getElementsByClassName("content")[0]
     let rootDiv = document.createElement("div");
     rootDiv.className = "root"
+    rootDiv.id = "root"
 
     //console.log("minor version: " + jsonData[0]["banners"][0]["minor_version"])
     //console.log(jsonData[0]["banners"][3]["characters"][0]["featured"])
@@ -19,13 +20,22 @@ function createVersionDiv(jsonData, rootDiv) {
 
         const version = "version-" + majorVersionNumber + "x";
         //console.log("major version: " + version)
+        //console.log(banners)
 
-        let versionDiv = document.createElement("div");
+        const collapseButton = document.createElement("button");
+        collapseButton.setAttribute("data-bs-toggle","collapse")
+        collapseButton.setAttribute("data-bs-target","#"+version)
+
+        collapseButton.innerHTML = "Banners during version " + majorVersionNumber + ".0 -> version " + majorVersionNumber + "." + banners[banners.length-1]["minor_version"];
+
+        const versionDiv = document.createElement("div");
         versionDiv.id = version;
-        versionDiv.className = "major";
+        versionDiv.className = "major collapse";
+        versionDiv.setAttribute("data-bs-parent","#root")
 
         createBannerData(banners, majorVersionNumber, versionDiv);
 
+        rootDiv.append(collapseButton)
         rootDiv.append(versionDiv);
     }
 }
@@ -35,7 +45,7 @@ function createBannerData(banners, majorVersionNumber, versionDiv) {
         let minorDiv = document.createElement("div");
         minorDiv.id = "version-" + majorVersionNumber + "_" + entry["minor_version"];
         minorDiv.className = "minor";
-        console.info("version-" + majorVersionNumber + "_" + entry["minor_version"])
+        //console.info("version-" + majorVersionNumber + "_" + entry["minor_version"])
 
         createCharacterData(entry, minorDiv);
 
@@ -64,7 +74,7 @@ function createCharacterData(entry, minorDiv) {
 
         if (rerunCharacter != null) {
             for (const character of rerunCharacter) {
-                console.info(character)
+                //console.info(character)
                 rerunDiv.append(createCharacterCard(character, 5));
             }
             minorDiv.append(rerunDiv)
