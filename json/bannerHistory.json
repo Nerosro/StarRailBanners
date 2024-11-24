@@ -141,7 +141,7 @@
       ]
     },
     {
-      "version": "1.5",
+      "version": "1.6",
       "characters": [
         {
           "banner": 1,
@@ -389,7 +389,7 @@
         },
         {
           "banner": 2,
-          "featured": "Algaea",
+          "featured": "Aglaea",
           "rerun": "",
           "featured4": [
             "",

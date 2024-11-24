@@ -35,6 +35,8 @@ span {
     position: relative;
 }
 
-.image-wrapper{
-    display: inline-block;
+#root{
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    column-gap: 3px;
 }
