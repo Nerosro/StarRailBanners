@@ -11,26 +11,37 @@ body {
     color: #fff;
 }
 
-.root{
+.root {
     display: flex;
     flex-direction: column;
 }
-
-.minor{
+.major{
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
+.minor {
     display: flex;
 }
 
-.character{
+.character.featured, .character.rerun{
     display: flex;
     flex-direction: row;
 }
 
-.characterCard{
+.characterCard {
     margin-left: 5px;
     margin-bottom: 5px;
 }
 
-.characterIcon {
-    width: 140px;
-    height: 189px;
+.characterIcon{
+    width: 288px;
+    height: 385px;
+}
+
+.rarity-4 .characterIcon{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 125px;
 }

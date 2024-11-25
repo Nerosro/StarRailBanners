@@ -22,22 +22,27 @@ function createVersionDiv(jsonData, rootDiv) {
         //console.log("major version: " + version)
         //console.log(banners)
 
-        const collapseButton = document.createElement("button");
-        collapseButton.setAttribute("data-bs-toggle","collapse")
-        collapseButton.setAttribute("data-bs-target","#"+version)
-
-        collapseButton.innerHTML = "Banners during version " + majorVersionNumber + ".0 -> version " + majorVersionNumber + "." + banners[banners.length-1]["minor_version"];
-
-        const versionDiv = document.createElement("div");
-        versionDiv.id = version;
-        versionDiv.className = "major collapse";
-        versionDiv.setAttribute("data-bs-parent","#root")
+        const {collapseButton, versionDiv} = createHtmlElements(version, majorVersionNumber, banners);
 
         createBannerData(banners, majorVersionNumber, versionDiv);
 
         rootDiv.append(collapseButton)
         rootDiv.append(versionDiv);
     }
+}
+
+function createHtmlElements(version, majorVersionNumber, banners) {
+    const collapseButton = document.createElement("button");
+    collapseButton.setAttribute("data-bs-toggle", "collapse")
+    collapseButton.setAttribute("data-bs-target", "#" + version)
+    collapseButton.innerHTML = "Banners during version " + majorVersionNumber + ".0 -> version " + majorVersionNumber + "." + banners[banners.length - 1]["minor_version"];
+
+    const versionDiv = document.createElement("div");
+    versionDiv.id = version;
+    versionDiv.className = "major collapse";
+    versionDiv.setAttribute("data-bs-parent", "#root")
+
+    return {collapseButton, versionDiv};
 }
 
 function createBannerData(banners, majorVersionNumber, versionDiv) {
@@ -97,7 +102,7 @@ function createCharacterCard(characterName, rarity) {
     imgDiv.className = "characterCard rarity-" + rarity;
 
     let img = document.createElement("img");
-    img.className="characterIcon"
+    img.className = "characterIcon"
     if (rarity === 4) {
         img.src = loc_4star;
     } else if (rarity === 5) {
