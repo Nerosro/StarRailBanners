@@ -59,7 +59,12 @@ function createBannerData(banners, majorVersionNumber, versionDiv) {
 }
 
 function createCharacterData(entry, minorDiv) {
+    let bannerVersion = 1;
     for (const characters of entry["characters"]) {
+        const bannerDiv = document.createElement("div")
+        bannerDiv.className="banner banner"+bannerVersion;
+        bannerVersion++;
+
         const featuredCharacter = characters["featured"]
         const rerunCharacter = characters["rerun"]
         const fourStarCharacter = characters["featured4"]
@@ -74,7 +79,7 @@ function createCharacterData(entry, minorDiv) {
 
         if (featuredCharacter != null) {
             featuredDiv.append(createCharacterCard(featuredCharacter, 5));
-            minorDiv.append(featuredDiv)
+            bannerDiv.append(featuredDiv)
         }
 
         if (rerunCharacter != null) {
@@ -82,16 +87,17 @@ function createCharacterData(entry, minorDiv) {
                 //console.info(character)
                 rerunDiv.append(createCharacterCard(character, 5));
             }
-            minorDiv.append(rerunDiv)
+            bannerDiv.append(rerunDiv)
         }
 
         if (fourStarCharacter != null) {
             for (const character of fourStarCharacter) {
                 //console.info(character)
                 fourStarDiv.append(createCharacterCard(character, 4))
-                minorDiv.append(fourStarDiv)
+                bannerDiv.append(fourStarDiv)
             }
         }
+        minorDiv.append(bannerDiv);
     }
 }
 

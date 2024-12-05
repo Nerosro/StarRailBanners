@@ -16,15 +16,20 @@ body {
     flex-direction: column;
 }
 .major{
-    align-items: center;
+    /*align-items: center;*/
     display: flex;
     flex-flow: column;
 }
-.minor {
+
+.minor{
     display: flex;
 }
 
-.character.featured, .character.rerun{
+.banner{
+    display: flex;
+}
+
+.character.featured, .character.rerun {
     display: flex;
     flex-direction: row;
 }
