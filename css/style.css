@@ -14,9 +14,9 @@ body {
 .root {
     display: flex;
     flex-direction: column;
+    min-width: fit-content;
 }
 .major{
-    /*align-items: center;*/
     display: flex;
     flex-flow: column;
 }
@@ -49,4 +49,17 @@ body {
     flex-direction: column;
     width: 100px;
     height: 125px;
+}
+
+.button{
+    display: block;
+    min-width: 100%;
+    border: 1px solid gray;
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: dimgray;
+    color: white;
+    padding: 20px 30px;
+    font-size: 20px;
+    cursor: pointer;
 }

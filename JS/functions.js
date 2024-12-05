@@ -33,6 +33,7 @@ function createVersionDiv(jsonData, rootDiv) {
 
 function createHtmlElements(version, majorVersionNumber, banners) {
     const collapseButton = document.createElement("button");
+    collapseButton.className="button";
     collapseButton.setAttribute("data-bs-toggle", "collapse")
     collapseButton.setAttribute("data-bs-target", "#" + version)
     collapseButton.innerHTML = "Banners during version " + majorVersionNumber + ".0 -> version " + majorVersionNumber + "." + banners[banners.length - 1]["minor_version"];
