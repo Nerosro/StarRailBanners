@@ -34,6 +34,10 @@ body {
     flex-direction: row;
 }
 
+.rerun .rarity-5{
+    background: linear-gradient(180deg, #103783, #9bafd9 53%);
+    /*background: linear-gradient(180deg, #454852, #ffffff 53%);*/
+}
 .characterCard {
     margin-left: 5px;
     margin-bottom: 5px;
