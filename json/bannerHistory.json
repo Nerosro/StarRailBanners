@@ -395,11 +395,42 @@
         "characters": [
           {
             "featured": "The Herta",
+            "rerun": [
+              "Lingsha",
+              "Feixiao",
+              "Jade"
+            ],
+            "featured4": [
+              "Natasha",
+              "Asta",
+              "Moze"
+            ]
+          },
+          {
+            "featured": "Aglaea",
+            "rerun": [
+              "Boothill",
+              "Robin",
+              "Silver Wolf"
+            ],
+            "featured4": [
+              "Tingyun",
+              "Hanya",
+              "Sushang"
+            ]
+          }
+        ]
+      },
+	  {
+        "minor_version": 1,
+        "characters": [
+          {
+            "featured": "Tribbie",
             "rerun": [],
             "featured4": []
           },
           {
-            "featured": "Aglaea",
+            "featured": "Mydei",
             "rerun": [],
             "featured4": []
           }
