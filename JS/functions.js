@@ -76,7 +76,7 @@ function createCharacterData(entry, minorDiv) {
         rerunDiv.className = "character rerun";
 
         const fourStarDiv = document.createElement("div");
-        fourStarDiv.className = "character";
+        fourStarDiv.className = "character fourStar";
 
         if (featuredCharacter != null) {
             featuredDiv.append(createCharacterCard(featuredCharacter, 5));
@@ -102,9 +102,9 @@ function createCharacterData(entry, minorDiv) {
     }
 }
 
-function createCharacterCard(characterName, rarity) {
-    const loc_5star = "images/characters/5_stars/" + characterName + ".webp";
-    const loc_4star = "images/characters/4_stars/" + characterName + ".webp";
+function createCharacterCard(character, rarity) {
+    const loc_5star = "images/characters/5_stars/" + character.name + ".webp";
+    const loc_4star = "images/characters/4_stars/" + character.name + ".webp";
     const imgDiv = document.createElement("div");
     imgDiv.className = "characterCard rarity-" + rarity;
 
@@ -118,7 +118,7 @@ function createCharacterCard(characterName, rarity) {
         console.log(rarity);
     }
 
-    img.alt = characterName;
+    img.alt = character;
 
     imgDiv.append(img);
     return imgDiv;

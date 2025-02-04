@@ -2,6 +2,10 @@
     background: linear-gradient(180deg, #885550, #c9a36a 53%);
 }
 
+.rerun .rarity-5{
+    background: linear-gradient(180deg, #103783, #9bafd9 53%);
+    /*background: linear-gradient(180deg, #454852, #ffffff 53%);*/
+}
 .rarity-4 {
     background: linear-gradient(180deg, #343659, #8a5fcc 53%);
 }
@@ -29,15 +33,11 @@ body {
     display: flex;
 }
 
-.character.featured, .character.rerun {
+.featured, .rerun {
     display: flex;
     flex-direction: row;
 }
 
-.rerun .rarity-5{
-    background: linear-gradient(180deg, #103783, #9bafd9 53%);
-    /*background: linear-gradient(180deg, #454852, #ffffff 53%);*/
-}
 .characterCard {
     margin-left: 5px;
     margin-bottom: 5px;
