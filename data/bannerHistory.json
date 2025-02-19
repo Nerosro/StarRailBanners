@@ -617,7 +617,7 @@
         "minor_version": 1,
         "characters": [
           {
-            "featured":  {
+            "featured": {
               "name": "Acheron",
               "element": "Lightning",
               "path": "Nihility",
@@ -1357,7 +1357,7 @@
           }
         ]
       },
-	  {
+      {
         "minor_version": 1,
         "characters": [
           {
@@ -1368,8 +1368,38 @@
               "rarity": 5,
               "firstBanner": "3.1"
             },
-            "rerun": [],
-            "featured4": []
+            "rerun": [
+              {
+                "name": "Yunli",
+                "element": "Physical",
+                "path": "Destruction",
+                "rarity": 5,
+                "firstBanner": "2.4"
+              }
+            ],
+            "featured4": [
+              {
+                "name": "Lynx",
+                "element": "Quantum",
+                "path": "Abundance",
+                "rarity": 4,
+                "firstBanner": "1.3"
+              },
+              {
+                "name": "Guinaifen",
+                "element": "Fire",
+                "path": "Nihility",
+                "rarity": 4,
+                "firstBanner": "1.4"
+              },
+              {
+                "name": "Hook",
+                "element": "Fire",
+                "path": "Destruction",
+                "rarity": 4,
+                "firstBanner": "1.0"
+              }
+            ]
           },
           {
             "featured": {
@@ -1378,6 +1408,63 @@
               "path": "Destruction",
               "rarity": 5,
               "firstBanner": "3.1"
+            },
+            "rerun": [
+              {
+                "name": "Huohuo",
+                "element": "Wind",
+                "path": "Abundance",
+                "rarity": 5,
+                "firstBanner": "1.5"
+              }
+            ],
+            "featured4": [
+              {
+                "name": "Arlan",
+                "element": "Lightning",
+                "path": "Destruction",
+                "rarity": 4,
+                "firstBanner": "1.2"
+              },
+              {
+                "name": "Xueyi",
+                "element": "Quantum",
+                "path": "Destruction",
+                "rarity": 4,
+                "firstBanner": "1.6"
+              },
+              {
+                "name": "Natasha",
+                "element": "Physical",
+                "path": "Abundance",
+                "rarity": 4,
+                "firstBanner": "1.0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "minor_version": 2,
+        "characters": [
+          {
+            "featured": {
+              "name": "Castorice",
+              "element": "Quantum",
+              "path": "Remembrance",
+              "rarity": 5,
+              "firstBanner": "3.2"
+            },
+            "rerun": [],
+            "featured4": []
+          },
+          {
+            "featured": {
+              "name": "Anaxa",
+              "element": "Wind",
+              "path": "Erudition",
+              "rarity": 5,
+              "firstBanner": "3.2"
             },
             "rerun": [],
             "featured4": []

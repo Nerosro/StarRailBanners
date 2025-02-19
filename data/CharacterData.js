@@ -145,6 +145,13 @@ let ARGENTI: {
     "rarity": 5,
     "firstBanner": "1.5"
 };
+let ANAXA: {
+    "name": "Anaxa",
+    "element": "Wind",
+    "path": "Erudition",
+    "rarity": 5,
+    "firstBanner": "3.2"
+};
 let HIMEKO: {
     "name": "Himeko",
     "element": "Fire",
@@ -415,6 +422,14 @@ let TRAILBLAZER_REMEMBRANCE: {
     "path": "Remembrance",
     "rarity": 5,
     "firstBanner": "Story"
+};
+
+let CASTORICE: {
+    "name": "Castorice",
+    "element": "Quantum",
+    "path": "Remembrance",
+    "rarity": 5,
+    "firstBanner": "3.2"
 };
 
 /**The Hunt*/
