@@ -25,7 +25,7 @@ let LOUCHA: {
     "element": "Imaginary",
     "path": "Abundance",
     "rarity": 5,
-    "firstBanner": ""
+    "firstBanner": "1.1"
 };
 
 let GALLAGHAR: {
@@ -423,7 +423,6 @@ let TRAILBLAZER_REMEMBRANCE: {
     "rarity": 5,
     "firstBanner": "Story"
 };
-
 let CASTORICE: {
     "name": "Castorice",
     "element": "Quantum",
@@ -452,7 +451,7 @@ let FEIXIAO: {
     "element": "Wind",
     "path": "The Hunt",
     "rarity": 5,
-    "firstBanner": "2.6"
+    "firstBanner": "2.5"
 };
 let SEELE: {
     "name": "Seele",

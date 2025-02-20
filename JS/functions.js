@@ -4,102 +4,113 @@ function createGallery(jsonData) {
     rootDiv.className = "root"
     rootDiv.id = "root"
 
-    //console.log("minor version: " + jsonData[0]["banners"][0]["minor_version"])
-    //console.log(jsonData[0]["banners"][3]["characters"][0]["featured"])
-
     createVersionDiv(jsonData, rootDiv);
 
     topNode.append(rootDiv)
 }
 
 function createVersionDiv(jsonData, rootDiv) {
-    for (const entry of jsonData) {
+    //const characterName = jsonData[0]["v1.0"]["banner_1"][0]
+    //const characterData = jsonData[1][characterName]
+    //console.log(characterName)
+    //console.log(characterData)
+    //console.info(jsonData)
+    //console.info(jsonData[0])
 
-        const majorVersionNumber = entry["major_version"];
-        const banners = entry["banners"];
+    for (let major = 1; major <= 3; major++) {
+        const {collapseButton, versionDiv} = createHtmlElements(major);
 
-        const version = "version-" + majorVersionNumber + "x";
-        //console.log("major version: " + version)
-        //console.log(banners)
+        for (let minor = 0; minor <= 8; minor++) {
+            const version = "v" + major + "." + minor;
+            //console.log(version);
+            const versionData = jsonData[0][version]
+            if (versionData !== undefined) {
+                const banner1 = versionData["banner_1"];
+                const banner2 = versionData["banner_2"];
+                //console.info(banner1)
+                //console.info(banner2)
 
-        const {collapseButton, versionDiv} = createHtmlElements(version, majorVersionNumber, banners);
-
-        createBannerData(banners, majorVersionNumber, versionDiv);
-
-        rootDiv.append(collapseButton)
+                createBannerData(jsonData, banner1, banner2, major, minor, versionDiv);
+            }
+        }
+        rootDiv.append(collapseButton);
         rootDiv.append(versionDiv);
     }
 }
 
-function createHtmlElements(version, majorVersionNumber, banners) {
+function createHtmlElements(versionNumber) {
     const collapseButton = document.createElement("button");
-    collapseButton.className="button";
+    collapseButton.className = "button";
     collapseButton.setAttribute("data-bs-toggle", "collapse")
-    collapseButton.setAttribute("data-bs-target", "#" + version)
-    collapseButton.innerHTML = "Banners during version " + majorVersionNumber + ".0 -> version " + majorVersionNumber + "." + banners[banners.length - 1]["minor_version"];
+    collapseButton.setAttribute("data-bs-target", "#" + versionNumber)
+    collapseButton.innerHTML = "Banners during version " + versionNumber + ".X"
 
     const versionDiv = document.createElement("div");
-    versionDiv.id = version;
+    versionDiv.id = versionNumber;
     versionDiv.className = "major collapse";
     versionDiv.setAttribute("data-bs-parent", "#root")
 
     return {collapseButton, versionDiv};
 }
 
-function createBannerData(banners, majorVersionNumber, versionDiv) {
-    for (const entry of banners) {
-        let minorDiv = document.createElement("div");
-        minorDiv.id = "version-" + majorVersionNumber + "_" + entry["minor_version"];
-        minorDiv.className = "minor";
-        //console.info("version-" + majorVersionNumber + "_" + entry["minor_version"])
+function createBannerData(jsonData, banner1, banner2, majorVersionNumber, minorVersionNumber, versionDiv) {
 
-        createCharacterData(entry, minorDiv);
+    const version = "v" + majorVersionNumber + "." + minorVersionNumber;
+    let minorDiv = document.createElement("div");
+    minorDiv.id = version
+    minorDiv.className = "minor";
+    //console.info("version-" + majorVersionNumber + "_" + minorVersionNumber)
 
-        versionDiv.append(minorDiv);
-    }
+    createCharacterData(jsonData, banner1, minorDiv, version, 1);
+    createCharacterData(jsonData, banner2, minorDiv, version, 2);
+
+    versionDiv.append(minorDiv);
 }
 
-function createCharacterData(entry, minorDiv) {
-    let bannerVersion = 1;
-    for (const characters of entry["characters"]) {
-        const bannerDiv = document.createElement("div")
-        bannerDiv.className="banner banner"+bannerVersion;
-        bannerVersion++;
+function createCharacterData(jsonData, characters, minorDiv, version, bannerNumber) {
+    const bannerDiv = document.createElement("div")
+    bannerDiv.className = "banner banner" + bannerNumber;
 
-        const featuredCharacter = characters["featured"]
-        const rerunCharacter = characters["rerun"]
-        const fourStarCharacter = characters["featured4"]
+    const featuredDiv = document.createElement("div");
+    featuredDiv.className = "character featured";
+    const rerunDiv = document.createElement("div");
+    rerunDiv.className = "character rerun";
+    const fourStarDiv = document.createElement("div");
+    fourStarDiv.className = "character fourStar";
 
-        const featuredDiv = document.createElement("div");
-        featuredDiv.className = "character featured";
-        const rerunDiv = document.createElement("div");
-        rerunDiv.className = "character rerun";
+    for (const character of characters) {
+        const currentCharacter = jsonData[1][character]
 
-        const fourStarDiv = document.createElement("div");
-        fourStarDiv.className = "character fourStar";
+        createBannerType(currentCharacter, version, bannerDiv, featuredDiv, rerunDiv, fourStarDiv)
 
-        if (featuredCharacter != null) {
-            featuredDiv.append(createCharacterCard(featuredCharacter, 5));
-            bannerDiv.append(featuredDiv)
-        }
-
-        if (rerunCharacter != null) {
-            for (const character of rerunCharacter) {
-                //console.info(character)
-                rerunDiv.append(createCharacterCard(character, 5));
-            }
-            bannerDiv.append(rerunDiv)
-        }
-
-        if (fourStarCharacter != null) {
-            for (const character of fourStarCharacter) {
-                //console.info(character)
-                fourStarDiv.append(createCharacterCard(character, 4))
-                bannerDiv.append(fourStarDiv)
-            }
-        }
-        minorDiv.append(bannerDiv);
     }
+    minorDiv.append(bannerDiv);
+}
+
+function createBannerType(characterData, version, bannerDiv, featuredDiv, rerunDiv, fourStarDiv){
+
+    const rarity = characterData["rarity"];
+    const initialVersion = characterData["firstBanner"];
+
+    if(rarity === 5){
+        if(initialVersion === version){
+            featuredDiv.append(createCharacterCard(characterData, rarity));
+            bannerDiv.append(featuredDiv);
+        }
+        else{
+            rerunDiv.append(createCharacterCard(characterData, rarity));
+            bannerDiv.append(rerunDiv);
+        }
+    }
+    else if(rarity === 4){
+        fourStarDiv.append(createCharacterCard(characterData, rarity));
+        bannerDiv.append(fourStarDiv);
+    }
+    else{
+        console.warn("Something went wrong, rarity=" + rarity)
+        console.warn(characterData)
+    }
+
 }
 
 function createCharacterCard(character, rarity) {
@@ -118,7 +129,7 @@ function createCharacterCard(character, rarity) {
         console.log(rarity);
     }
 
-    img.alt = character;
+    img.alt = character["name"];
 
     imgDiv.append(img);
     return imgDiv;

@@ -1,0 +1,485 @@
+{
+  "ACHERON": {
+    "name": "Acheron",
+    "element": "Lightning",
+    "path": "Nihility",
+    "rarity": 5,
+    "firstBanner": "v2.1"
+  },
+  "AGLAEA": {
+    "name": "Aglaea",
+    "element": "Lightning",
+    "path": "Remembrance",
+    "rarity": 5,
+    "firstBanner": "v3.0"
+  },
+  "ANAXA": {
+    "name": "Anaxa",
+    "element": "Wind",
+    "path": "Erudition",
+    "rarity": 5,
+    "firstBanner": "v3.2"
+  },
+  "ARGENTI": {
+    "name": "Argenti",
+    "element": "Physical",
+    "path": "Erudition",
+    "rarity": 5,
+    "firstBanner": "v1.5"
+  },
+  "ARLAN": {
+    "name": "Arlan",
+    "element": "Lightning",
+    "path": "Destruction",
+    "rarity": 4,
+    "firstBanner": "v1.2"
+  },
+  "ASTA": {
+    "name": "Asta",
+    "element": "Fire",
+    "path": "Harmony",
+    "rarity": 4,
+    "firstBanner": "v1.1"
+  },
+  "AVENTURINE": {
+    "name": "Aventurine",
+    "element": "Imaginary",
+    "path": "Preservation",
+    "rarity": 5,
+    "firstBanner": "v2.1"
+  },
+  "BAILU": {
+    "name": "Bailu",
+    "element": "Lightning",
+    "path": "Abundance",
+    "rarity": 5,
+    "firstBanner": "Standard_character"
+  },
+  "BLACK_SWAN": {
+    "name": "Black Swan",
+    "element": "Wind",
+    "path": "Nihility",
+    "rarity": 5,
+    "firstBanner": "v2.0"
+  },
+  "BLADE": {
+    "name": "Blade",
+    "element": "Wind",
+    "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "v1.2"
+  },
+  "BOOTHILL": {
+    "name": "Boothill",
+    "element": "Physical",
+    "path": "The Hunt",
+    "rarity": 5,
+    "firstBanner": "v2.2"
+  },
+  "BRONYA": {
+    "name": "Bronya",
+    "element": "Wind",
+    "path": "Harmony",
+    "rarity": 5,
+    "firstBanner": "Standard_character"
+  },
+  "CASTORICE": {
+    "name": "Castorice",
+    "element": "Quantum",
+    "path": "Remembrance",
+    "rarity": 5,
+    "firstBanner": "v3.2"
+  },
+  "CLARA": {
+    "name": "Clara",
+    "element": "Physical",
+    "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "Standard_character"
+  },
+  "DAN_HENG": {
+    "name": "Dan Heng",
+    "element": "Wind",
+    "path": "The Hunt",
+    "rarity": 4,
+    "firstBanner": "v1.1"
+  },
+  "DAN_HENG_IMBIBITOR_LUNAE": {
+    "name": "Dan Heng - Imbibitor Lunae",
+    "element": "Imaginary",
+    "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "v1.3"
+  },
+  "DR_RATIO": {
+    "name": "Dr. Ratio",
+    "element": "Imaginary",
+    "path": "The Hunt",
+    "rarity": 5,
+    "firstBanner": "v1.6"
+  },
+  "FEIXIAO": {
+    "name": "Feixiao",
+    "element": "Wind",
+    "path": "The Hunt",
+    "rarity": 5,
+    "firstBanner": "v2.5"
+  },
+  "FIREFLY": {
+    "name": "Firefly",
+    "element": "Fire",
+    "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "v2.3"
+  },
+  "FU_XUAN": {
+    "name": "Fu Xuan",
+    "element": "Quantum",
+    "path": "Preservation",
+    "rarity": 5,
+    "firstBanner": "v1.3"
+  },
+  "FUGUE": {
+    "name": "Fugue",
+    "element": "Fire",
+    "path": "Nihility",
+    "rarity": 5,
+    "firstBanner": "v2.7"
+  },
+  "GALLAGHER": {
+    "name": "Gallagher",
+    "element": "Fire",
+    "path": "Abundance",
+    "rarity": 4,
+    "firstBanner": "v2.1"
+  },
+  "GEPARD": {
+    "name": "Gepard",
+    "element": "Ice",
+    "path": "Preservation",
+    "rarity": 5,
+    "firstBanner": "Standard_character"
+  },
+  "GUINAIFEN": {
+    "name": "Guinaifen",
+    "element": "Fire",
+    "path": "Nihility",
+    "rarity": 4,
+    "firstBanner": "v1.4"
+  },
+  "HANYA": {
+    "name": "Hanya",
+    "element": "Physical",
+    "path": "Harmony",
+    "rarity": 4,
+    "firstBanner": "v1.5"
+  },
+  "HERTA": {
+    "name": "Herta",
+    "element": "Ice",
+    "path": "Erudition",
+    "rarity": 4,
+    "firstBanner": "Story"
+  },
+  "HIMEKO": {
+    "name": "Himeko",
+    "element": "Fire",
+    "path": "Erudition",
+    "rarity": 5,
+    "firstBanner": "Standard_character"
+  },
+  "HOOK": {
+    "name": "Hook",
+    "element": "Fire",
+    "path": "Destruction",
+    "rarity": 4,
+    "firstBanner": "v1.0"
+  },
+  "HUOHUO": {
+    "name": "Huohuo",
+    "element": "Wind",
+    "path": "Abundance",
+    "rarity": 5,
+    "firstBanner": "v1.5"
+  },
+  "JADE": {
+    "name": "Jade",
+    "element": "Quantum",
+    "path": "Erudition",
+    "rarity": 5,
+    "firstBanner": "v2.3"
+  },
+  "JIAOQIU": {
+    "name": "Jiaoqiu",
+    "element": "Fire",
+    "path": "Nihility",
+    "rarity": 5,
+    "firstBanner": "v2.4"
+  },
+  "JING_YUAN": {
+    "name": "Jing Yuan",
+    "element": "Lightning",
+    "path": "Erudition",
+    "rarity": 5,
+    "firstBanner": "v1.0"
+  },
+  "JINGLIU": {
+    "name": "Jingliu",
+    "element": "Ice",
+    "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "v1.4"
+  },
+  "KAFKA": {
+    "name": "Kafka",
+    "element": "Lightning",
+    "path": "Nihility",
+    "rarity": 5,
+    "firstBanner": "v1.2"
+  },
+  "LINGSHA": {
+    "name": "Lingsha",
+    "element": "Fire",
+    "path": "Abundance",
+    "rarity": 5,
+    "firstBanner": "v2.5"
+  },
+  "LUKA": {
+    "name": "Luka",
+    "element": "Physical",
+    "path": "Nihility",
+    "rarity": 4,
+    "firstBanner": "v1.2"
+  },
+  "LOUCHA": {
+    "name": "Loucha",
+    "element": "Imaginary",
+    "path": "Abundance",
+    "rarity": 5,
+    "firstBanner": "v1.1"
+  },
+  "LYNX": {
+    "name": "Lynx",
+    "element": "Quantum",
+    "path": "Abundance",
+    "rarity": 4,
+    "firstBanner": "v1.3"
+  },
+  "MARCH_7TH": {
+    "name": "March 7th",
+    "element": "Ice",
+    "path": "Preservation",
+    "rarity": 4,
+    "firstBanner": "v1.0"
+  },
+  "MARCH_7TH_HUNT": {
+    "name": "March 7th",
+    "element": "Imaginary",
+    "path": "The Hunt",
+    "rarity": 4,
+    "firstBanner": "Story"
+  },
+  "MISHA": {
+    "name": "Misha",
+    "element": "Ice",
+    "path": "Destruction",
+    "rarity": 4,
+    "firstBanner": "v2.0"
+  },
+  "MOZE": {
+    "name": "Moze",
+    "element": "Lightning",
+    "path": "The Hunt",
+    "rarity": 4,
+    "firstBanner": "v2.5"
+  },
+  "MYDEI": {
+    "name": "Mydei",
+    "element": "Imaginary",
+    "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "v3.1"
+  },
+  "NATASHA": {
+    "name": "Natasha",
+    "element": "Physical",
+    "path": "Abundance",
+    "rarity": 4,
+    "firstBanner": "v1.0"
+  },
+  "PELA": {
+    "name": "Pela",
+    "element": "Ice",
+    "path": "Nihility",
+    "rarity": 4,
+    "firstBanner": "v1.0"
+  },
+  "QINGQUE": {
+    "name": "Qingque",
+    "element": "Quantum",
+    "path": "Erudition",
+    "rarity": 4,
+    "firstBanner": "v1.1"
+  },
+  "RAPPA": {
+    "name": "Rappa",
+    "element": "Imaginary",
+    "path": "Erudition",
+    "rarity": 5,
+    "firstBanner": "v2.6"
+  },
+  "ROBIN": {
+    "name": "Robin",
+    "element": "Physical",
+    "path": "Harmony",
+    "rarity": 5,
+    "firstBanner": "v2.2"
+  },
+  "RUAN_MEI": {
+    "name": "Ruan Mei",
+    "element": "Ice",
+    "path": "Harmony",
+    "rarity": 5,
+    "firstBanner": "v1.6"
+  },
+  "SAMPO": {
+    "name": "Sampo",
+    "element": "Wind",
+    "path": "Nihility",
+    "rarity": 4,
+    "firstBanner": "v1.2"
+  },
+  "SEELE": {
+    "name": "Seele",
+    "element": "Quantum",
+    "path": "The Hunt",
+    "rarity": 5,
+    "firstBanner": "v1.0"
+  },
+  "SERVAL": {
+    "name": "Serval",
+    "element": "Lightning",
+    "path": "Erudition",
+    "rarity": 4,
+    "firstBanner": "v1.1"
+  },
+  "SILVER_WOLF": {
+    "name": "Silver Wolf",
+    "element": "Quantum",
+    "path": "Nihility",
+    "rarity": 5,
+    "firstBanner": "v1.1"
+  },
+  "SPARKLE": {
+    "name": "Sparkle",
+    "element": "Quantum",
+    "path": "Harmony",
+    "rarity": 5,
+    "firstBanner": "v2.0"
+  },
+  "SUNDAY": {
+    "name": "Sunday",
+    "element": "Imaginary",
+    "path": "Harmony",
+    "rarity": 5,
+    "firstBanner": "v2.7"
+  },
+  "SUSHANG": {
+    "name": "Sushang",
+    "element": "Physical",
+    "path": "The Hunt",
+    "rarity": 4,
+    "firstBanner": "v1.0"
+  },
+  "THE_HERTA": {
+    "name": "The Herta",
+    "element": "Ice",
+    "path": "Erudition",
+    "rarity": 5,
+    "firstBanner": "v3.0"
+  },
+  "TINGYUN": {
+    "name": "Tingyun",
+    "element": "Lightning",
+    "path": "Harmony",
+    "rarity": 4,
+    "firstBanner": "v1.0"
+  },
+  "TOPAZ_AND_NUMBY": {
+    "name": "Topaz & Numby",
+    "element": "Fire",
+    "path": "The Hunt",
+    "rarity": 5,
+    "firstBanner": "v1.4"
+  },
+  "TRAILBLAZER_DESTRUCTION": {
+    "name": "Trailblazer",
+    "element": "Physical",
+    "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "Story"
+  },
+  "TRAILBLAZER_HARMONY": {
+    "name": "Trailblazer",
+    "element": "Imaginary",
+    "path": "Harmony",
+    "rarity": 5,
+    "firstBanner": "Story"
+  },
+  "TRAILBLAZER_PRESERVATION": {
+    "name": "Trailblazer",
+    "element": "Fire",
+    "path": "Preservation",
+    "rarity": 5,
+    "firstBanner": "Story"
+  },
+  "TRAILBLAZER_REMEMBRANCE": {
+    "name": "Trailblazer",
+    "element": "Ice",
+    "path": "Remembrance",
+    "rarity": 5,
+    "firstBanner": "Story"
+  },
+  "TRIBBIE": {
+    "name": "Tribbie",
+    "element": "Quantum",
+    "path": "Harmony",
+    "rarity": 5,
+    "firstBanner": "v3.1"
+  },
+  "WELT": {
+    "name": "Welt",
+    "element": "Imaginary",
+    "path": "Nihility",
+    "rarity": 5,
+    "firstBanner": "Standard_character"
+  },
+  "XUEYI": {
+    "name": "Xueyi",
+    "element": "Quantum",
+    "path": "Destruction",
+    "rarity": 4,
+    "firstBanner": "v1.6"
+  },
+  "YANQING": {
+    "name": "Yanqing",
+    "element": "Ice",
+    "path": "The Hunt",
+    "rarity": 5,
+    "firstBanner": "Standard_character"
+  },
+  "YUKONG": {
+    "name": "Yukong",
+    "element": "Imaginary",
+    "path": "Harmony",
+    "rarity": 4,
+    "firstBanner": "v1.1"
+  },
+  "YUNLI": {
+    "name": "Yunli",
+    "element": "Physical",
+    "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "v2.4"
+  }
+}
