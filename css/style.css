@@ -2,10 +2,11 @@
     background: linear-gradient(180deg, #885550, #c9a36a 53%);
 }
 
-.rerun .rarity-5{
+.rerun .rarity-5 {
     background: linear-gradient(180deg, #103783, #9bafd9 53%);
     /*background: linear-gradient(180deg, #454852, #ffffff 53%);*/
 }
+
 .rarity-4 {
     background: linear-gradient(180deg, #343659, #8a5fcc 53%);
 }
@@ -18,18 +19,19 @@ body {
 .root {
     display: flex;
     flex-direction: column;
-    min-width: fit-content;
 }
-.major{
+
+.major {
     display: flex;
     flex-flow: column;
+    overflow-x: scroll;
 }
 
-.minor{
+.minor {
     display: flex;
 }
 
-.banner{
+.banner {
     display: flex;
 }
 
@@ -43,19 +45,19 @@ body {
     margin-bottom: 5px;
 }
 
-.characterIcon{
+.characterIcon {
     width: 288px;
     height: 385px;
 }
 
-.rarity-4 .characterIcon{
+.rarity-4 .characterIcon {
     display: flex;
     flex-direction: column;
     width: 100px;
     height: 125px;
 }
 
-.button{
+.button {
     display: block;
     min-width: 100%;
     border: 1px solid gray;
@@ -68,6 +70,31 @@ body {
     cursor: pointer;
 }
 
-.button:first-child{
+.button:first-child {
     margin-top: 10px;
+}
+
+.version {
+    border: 1px solid gray;
+    background-color: dimgray;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.text{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    font: bold 20px Sans-Serif;
+}
+
+.rotated{
+    position: relative;
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 5px 10px;
+    line-height: 24px;
+    transform: rotate(-90deg);
 }

@@ -40,7 +40,7 @@ function createVersionDiv(jsonData, rootDiv) {
 
 function createHtmlElements(versionNumber) {
     const collapseButton = document.createElement("button");
-    collapseButton.className = "button";
+    collapseButton.className = "button text";
     collapseButton.setAttribute("data-bs-toggle", "collapse")
     collapseButton.setAttribute("data-bs-target", "#" + versionNumber)
     collapseButton.innerHTML = "Banners during version " + versionNumber + ".X"
@@ -53,6 +53,8 @@ function createHtmlElements(versionNumber) {
     return {collapseButton, versionDiv};
 }
 
+
+
 function createBannerData(jsonData, banner1, banner2, majorVersionNumber, minorVersionNumber, versionDiv) {
 
     const version = "v" + majorVersionNumber + "." + minorVersionNumber;
@@ -61,12 +63,23 @@ function createBannerData(jsonData, banner1, banner2, majorVersionNumber, minorV
     minorDiv.className = "minor";
     //console.info("version-" + majorVersionNumber + "_" + minorVersionNumber)
 
+    createVersionHeader(version, minorDiv)
     createCharacterData(jsonData, banner1, minorDiv, version, 1);
     createCharacterData(jsonData, banner2, minorDiv, version, 2);
 
     versionDiv.append(minorDiv);
 }
 
+function createVersionHeader(version, minorDiv) {
+    const versionDiv = document.createElement("div")
+    const versionText = document.createElement("p")
+    versionText.innerText = version;
+    versionText.className = "text rotated"
+    versionDiv.className = "version"
+
+    versionDiv.append(versionText)
+    minorDiv.append(versionDiv)
+}
 function createCharacterData(jsonData, characters, minorDiv, version, bannerNumber) {
     const bannerDiv = document.createElement("div")
     bannerDiv.className = "banner banner" + bannerNumber;
@@ -87,26 +100,23 @@ function createCharacterData(jsonData, characters, minorDiv, version, bannerNumb
     minorDiv.append(bannerDiv);
 }
 
-function createBannerType(characterData, version, bannerDiv, featuredDiv, rerunDiv, fourStarDiv){
+function createBannerType(characterData, version, bannerDiv, featuredDiv, rerunDiv, fourStarDiv) {
 
     const rarity = characterData["rarity"];
     const initialVersion = characterData["firstBanner"];
 
-    if(rarity === 5){
-        if(initialVersion === version){
+    if (rarity === 5) {
+        if (initialVersion === version) {
             featuredDiv.append(createCharacterCard(characterData, rarity));
             bannerDiv.append(featuredDiv);
-        }
-        else{
+        } else {
             rerunDiv.append(createCharacterCard(characterData, rarity));
             bannerDiv.append(rerunDiv);
         }
-    }
-    else if(rarity === 4){
+    } else if (rarity === 4) {
         fourStarDiv.append(createCharacterCard(characterData, rarity));
         bannerDiv.append(fourStarDiv);
-    }
-    else{
+    } else {
         console.warn("Something went wrong, rarity=" + rarity)
         console.warn(characterData)
     }
