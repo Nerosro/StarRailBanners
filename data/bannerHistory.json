@@ -269,10 +269,20 @@
   },
   "v3.2": {
     "banner_1": [
-      "CASTORICE"
+      "CASTORICE",
+      "FUGUE",
+      "JIAOQIU",
+      "ACHERON",
+      "PELA",
+      "GALLAGHER",
+      "LYNX"
     ],
     "banner_2": [
-      "ANAXA"
+      "ANAXA",
+      "DR_RATIO",
+      "DAN_HENG",
+      "SERVAL",
+      "MOZE"
     ]
   }
 }
