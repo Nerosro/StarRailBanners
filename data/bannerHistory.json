@@ -284,6 +284,14 @@
       "SERVAL",
       "MOZE"
     ]
+  },
+  "v3.3": {
+    "banner_1": [
+      "HYACINE"
+    ],
+    "banner_2": [
+      "CIPHER"
+    ]
   }
 }
 

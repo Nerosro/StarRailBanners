@@ -90,6 +90,13 @@
     "rarity": 5,
     "firstBanner": "v3.2"
   },
+  "CIPHER": {
+    "name": "Cipher",
+    "element": "Quantum",
+    "path": "Nihility",
+    "rarity": 5,
+    "firstBanner": "v3.3"
+  },
   "CLARA": {
     "name": "Clara",
     "element": "Physical",
@@ -201,6 +208,13 @@
     "path": "Abundance",
     "rarity": 5,
     "firstBanner": "v1.5"
+  },
+  "HYACINE": {
+    "name": "Hyacine",
+    "element": "Wind",
+    "path": "Remembrance",
+    "rarity": 5,
+    "firstBanner": "v3.3"
   },
   "JADE": {
     "name": "Jade",
