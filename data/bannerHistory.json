@@ -287,10 +287,12 @@
   },
   "v3.3": {
     "banner_1": [
-      "HYACINE"
+      "HYACINE",
+      "THE_HERTA"
     ],
     "banner_2": [
-      "CIPHER"
+      "CIPHER",
+      "AGLAEA"
     ]
   }
 }
