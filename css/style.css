@@ -19,6 +19,7 @@ body {
 .root {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .major {
@@ -97,4 +98,15 @@ body {
     padding: 5px 10px;
     line-height: 24px;
     transform: rotate(-90deg);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: right;
+    padding: 5px;
+    background-color: dimgray;
+    color: #000;
+    width: 100%;
 }
