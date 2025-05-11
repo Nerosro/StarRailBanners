@@ -15,7 +15,7 @@ function createVersionDiv(jsonData, rootDiv) {
     //console.log(characterName)
     //console.log(characterData)
     //console.info(jsonData)
-    //console.info(jsonData[0])
+    console.info(jsonData[0])
 
     for (let major = 1; major <= 3; major++) {
         const {collapseButton, versionDiv} = createHtmlElements(major);
@@ -31,6 +31,19 @@ function createVersionDiv(jsonData, rootDiv) {
                 //console.info(banner2)
 
                 createBannerData(jsonData, banner1, banner2, major, minor, versionDiv);
+            }
+
+            try{
+                const version = "v" + major + "." + minor + "_extra";
+                if(jsonData[0][version]){
+                    console.log(version);
+                    const versionData = jsonData[0][version]
+                    const specialBanner = versionData["banner_1"];
+                    createBannerData(jsonData, specialBanner, null, major, minor, versionDiv);
+                }
+            }
+            catch(error){
+                console.log("No special banner found")
             }
         }
         rootDiv.append(collapseButton);
@@ -57,7 +70,10 @@ function createHtmlElements(versionNumber) {
 
 function createBannerData(jsonData, banner1, banner2, majorVersionNumber, minorVersionNumber, versionDiv) {
 
-    const version = "v" + majorVersionNumber + "." + minorVersionNumber;
+    let version = "v" + majorVersionNumber + "." + minorVersionNumber;
+    if(banner2==null){
+        version = version + "_extra";
+    }
     let minorDiv = document.createElement("div");
     minorDiv.id = version
     minorDiv.className = "minor";
@@ -65,7 +81,9 @@ function createBannerData(jsonData, banner1, banner2, majorVersionNumber, minorV
 
     createVersionHeader(version, minorDiv)
     createCharacterData(jsonData, banner1, minorDiv, version, 1);
-    createCharacterData(jsonData, banner2, minorDiv, version, 2);
+    if(banner2!=null){
+        createCharacterData(jsonData, banner2, minorDiv, version, 2);
+    }
 
     versionDiv.append(minorDiv);
 }

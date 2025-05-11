@@ -300,6 +300,19 @@
       "XUEYI",
       "SUSHANG"
     ]
+  },
+  "v3.4": {
+    "banner_1": [
+      "PHAINON"
+    ],
+    "banner_2": [
+    ]
+  },
+  "v3.4_extra": {
+    "banner_1": [
+      "SABER",
+      "ARCHER"
+    ]
   }
 }
 

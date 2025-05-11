@@ -20,6 +20,13 @@
     "rarity": 5,
     "firstBanner": "v3.2"
   },
+  "ARCHER": {
+    "name": "Archer",
+    "element": "Quantum",
+    "path": "The Hunt",
+    "rarity": 5,
+    "firstBanner": "v3.4_extra"
+  },
   "ARGENTI": {
     "name": "Argenti",
     "element": "Physical",
@@ -335,6 +342,13 @@
     "rarity": 4,
     "firstBanner": "v1.1"
   },
+  "PHAINON": {
+    "name": "Phainon",
+    "element": "Physical",
+    "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "v3.4"
+  },
   "RAPPA": {
     "name": "Rappa",
     "element": "Imaginary",
@@ -355,6 +369,13 @@
     "path": "Harmony",
     "rarity": 5,
     "firstBanner": "v1.6"
+  },
+  "SABER": {
+    "name": "Saber",
+    "element": "Wind",
+    "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "v3.4_extra"
   },
   "SAMPO": {
     "name": "Sampo",
