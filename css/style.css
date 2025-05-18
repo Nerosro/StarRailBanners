@@ -44,6 +44,7 @@ body {
 .characterCard {
     margin-left: 5px;
     margin-bottom: 5px;
+    position: relative;
 }
 
 .characterIcon {
@@ -56,6 +57,30 @@ body {
     flex-direction: column;
     width: 100px;
     height: 125px;
+}
+
+.floating-icon {
+    display: none;
+}
+
+.characterCard:hover .floating-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.elementIcon {
+    background: rgba(165, 173, 190, 0.5);
+    border-radius: 5px;
+    width: 40px;
+}
+
+.pathIcon {
+    background: rgba(165, 173, 190, 0.5);
+    border-radius: 5px;
+    width: 40px;
 }
 
 .button {
@@ -84,14 +109,14 @@ body {
     align-content: center;
 }
 
-.text{
+.text {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #fff;
     font: bold 20px Sans-Serif;
 }
 
-.rotated{
+.rotated {
     position: relative;
     display: block;
     padding: 5px 10px;

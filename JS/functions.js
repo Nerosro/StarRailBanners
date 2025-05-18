@@ -33,16 +33,15 @@ function createVersionDiv(jsonData, rootDiv) {
                 createBannerData(jsonData, banner1, banner2, major, minor, versionDiv);
             }
 
-            try{
+            try {
                 const version = "v" + major + "." + minor + "_extra";
-                if(jsonData[0][version]){
-                    console.log(version);
+                if (jsonData[0][version]) {
+                    //console.log(Special banner: version);
                     const versionData = jsonData[0][version]
                     const specialBanner = versionData["banner_1"];
                     createBannerData(jsonData, specialBanner, null, major, minor, versionDiv);
                 }
-            }
-            catch(error){
+            } catch (error) {
                 console.log("No special banner found")
             }
         }
@@ -67,11 +66,10 @@ function createHtmlElements(versionNumber) {
 }
 
 
-
 function createBannerData(jsonData, banner1, banner2, majorVersionNumber, minorVersionNumber, versionDiv) {
 
     let version = "v" + majorVersionNumber + "." + minorVersionNumber;
-    if(banner2==null){
+    if (banner2 == null) {
         version = version + "_extra";
     }
     let minorDiv = document.createElement("div");
@@ -81,7 +79,7 @@ function createBannerData(jsonData, banner1, banner2, majorVersionNumber, minorV
 
     createVersionHeader(version, minorDiv)
     createCharacterData(jsonData, banner1, minorDiv, version, 1);
-    if(banner2!=null){
+    if (banner2 != null) {
         createCharacterData(jsonData, banner2, minorDiv, version, 2);
     }
 
@@ -98,6 +96,7 @@ function createVersionHeader(version, minorDiv) {
     versionDiv.append(versionText)
     minorDiv.append(versionDiv)
 }
+
 function createCharacterData(jsonData, characters, minorDiv, version, bannerNumber) {
     const bannerDiv = document.createElement("div")
     bannerDiv.className = "banner banner" + bannerNumber;
@@ -135,10 +134,9 @@ function createBannerType(characterData, version, bannerDiv, featuredDiv, rerunD
         fourStarDiv.append(createCharacterCard(characterData, rarity));
         bannerDiv.append(fourStarDiv);
     } else {
-        console.warn("Something went wrong, rarity=" + rarity)
+        console.warn("Something went wrong, rarity = " + rarity)
         console.warn(characterData)
     }
-
 }
 
 function createCharacterCard(character, rarity) {
@@ -146,19 +144,44 @@ function createCharacterCard(character, rarity) {
     const loc_4star = "images/characters/4_stars/" + character.name + ".webp";
     const imgDiv = document.createElement("div");
     imgDiv.className = "characterCard rarity-" + rarity;
+    const characterDiv = document.createElement("div");
+    characterDiv.className = "character-Image";
 
-    let img = document.createElement("img");
-    img.className = "characterIcon"
+    let imgCharacter = document.createElement("img");
+    imgCharacter.className = "characterIcon"
     if (rarity === 4) {
-        img.src = loc_4star;
+        imgCharacter.src = loc_4star;
     } else if (rarity === 5) {
-        img.src = loc_5star;
+        imgCharacter.src = loc_5star;
     } else {
         console.log(rarity);
     }
+    imgCharacter.alt = character["name"];
 
-    img.alt = character["name"];
+    let iconDiv = createIcons(character);
+    characterDiv.append(imgCharacter);
 
-    imgDiv.append(img);
+    imgDiv.append(characterDiv);
+    imgDiv.append(iconDiv);
     return imgDiv;
+}
+
+function createIcons(character) {
+    const path = "images/paths/" + character.path + ".webp"
+    const element = "images/elements/" + character.element + ".webp"
+
+    const iconDiv = document.createElement("div");
+    iconDiv.className = "floating-icon";
+
+    let iconPath = document.createElement("img");
+    iconPath.className = "pathIcon"
+    iconPath.src = path;
+
+    let iconElement = document.createElement("img");
+    iconElement.className = "elementIcon"
+    iconElement.src = element;
+
+    iconDiv.append(iconElement);
+    iconDiv.append(iconPath);
+    return iconDiv;
 }
