@@ -97,6 +97,13 @@
     "rarity": 5,
     "firstBanner": "v3.2"
   },
+  "CERYDRA": {
+    "name": "Cerydra",
+    "element": "Wind",
+    "path": "Harmony",
+    "rarity": 5,
+    "firstBanner": "v3.5"
+  },
   "CIPHER": {
     "name": "Cipher",
     "element": "Quantum",
@@ -222,6 +229,13 @@
     "path": "Remembrance",
     "rarity": 5,
     "firstBanner": "v3.3"
+  },
+  "HYSILENS": {
+    "name": "Hysilens",
+    "element": "Physical",
+    "path": "Nihility",
+    "rarity": 5,
+    "firstBanner": "v3.5"
   },
   "JADE": {
     "name": "Jade",
