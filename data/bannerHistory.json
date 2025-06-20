@@ -303,15 +303,37 @@
   },
   "v3.4": {
     "banner_1": [
-      "PHAINON"
+      "PHAINON",
+      "TRIBBIE",
+      "SUNDAY",
+      "SPARKLE",
+      "TINGYUN",
+      "MARCH_7TH",
+      "YUKONG"
     ],
     "banner_2": [
+      "FIREFLY",
+      "JINGLIU",
+      "BLADE",
+      "HANYA",
+      "LYNX",
+      "LUKA"
     ]
   },
   "v3.4_extra": {
     "banner_1": [
       "SABER",
       "ARCHER"
+    ]
+  },
+  "v3.5": {
+    "banner_1": [
+      "CERYDRA"
+    ],
+    "banner_2": [
+      "HYSILENS",
+      "KAFKA",
+      "SILVER_WOLF"
     ]
   }
 }
