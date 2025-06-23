@@ -9,6 +9,9 @@ function createGallery(jsonData) {
     topNode.append(rootDiv)
 
     createMapLegend();
+
+    console.info(window.screen.width)
+    console.info(window.screen.height)
 }
 
 function createVersionDiv(jsonData, rootDiv) {
@@ -195,9 +198,9 @@ function createIcons(character) {
 
 function createMapLegend() {
     const rarityList = new Map([
-        ["rarity-5", "New 5-star character banner available the first time"],
-        ["rerun", "Returning 5-star character banner"],
-        ["rarity-5-special", "Special banners, reserved for collab events (Like the Fate collab) Characters will likely not return"],
+        ["rarity-5", "New 5-star character, available the first time"],
+        ["rerun", "Returning 5-star character"],
+        ["rarity-5-special", "Special characters, reserved for collab events. Characters will likely not return"],
         ["rarity-4", "4-star characters featured with the 5-star character banner"]
     ]);
 
