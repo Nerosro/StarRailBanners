@@ -138,3 +138,46 @@ footer {
     color: #000;
     width: 100%;
 }
+
+.footerDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mapLegend{
+    display: none;
+    background-color: #23242a;
+    border-radius: 5px;
+    border: 3px solid lightgray;
+    color: lightgray;
+    text-align: left;
+    margin-bottom: 60px;
+
+}
+
+.mapLegendBtn:hover .mapLegend{
+    display: grid;
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+}
+
+.entryDiv{
+    display: grid;
+    flex: 1 1 100%;
+    grid-template-columns: repeat(2, auto);
+    justify-content: left;
+    align-items: center;
+}
+
+.entryDiv .rerun {
+    /* This is here because the rerun banner is decided by the rerun or featured tag on the parentDiv */
+    background: linear-gradient(180deg, #103783, #9bafd9 53%);
+    /*background: linear-gradient(180deg, #454852, #ffffff 53%);*/
+}
+.legend{
+    display: grid;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}

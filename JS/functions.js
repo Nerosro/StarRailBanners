@@ -7,6 +7,8 @@ function createGallery(jsonData) {
     createVersionDiv(jsonData, rootDiv);
 
     topNode.append(rootDiv)
+
+    createMapLegend();
 }
 
 function createVersionDiv(jsonData, rootDiv) {
@@ -145,7 +147,7 @@ function createCharacterCard(character, rarity) {
     const imgDiv = document.createElement("div");
     imgDiv.className = "characterCard rarity-" + rarity;
     if(character.firstBanner.indexOf("_extra")>0){
-        console.warn("event character detected")
+        //console.warn("event character detected")
         imgDiv.className = "characterCard rarity-" + rarity + "-special";
     }
 
@@ -189,4 +191,34 @@ function createIcons(character) {
     iconDiv.append(iconElement);
     iconDiv.append(iconPath);
     return iconDiv;
+}
+
+function createMapLegend() {
+    const rarityList = new Map([
+        ["rarity-5", "New 5-star character banner available the first time"],
+        ["rerun", "Returning 5-star character banner"],
+        ["rarity-5-special", "Special banners, reserved for collab events (Like the Fate collab) Characters will likely not return"],
+        ["rarity-4", "4-star characters featured with the 5-star character banner"]
+    ]);
+
+    const anchorDiv = document.getElementsByClassName("mapLegend")[0]
+    const backgroundDiv = document.createElement("div");
+
+    for (let [key, value] of rarityList){
+
+        console.info(key + " " + value)
+        const entryDiv = document.createElement("div");
+        entryDiv.className= "entryDiv"
+        const colorCodeDiv = document.createElement("div");
+        colorCodeDiv.className="legend " + key
+        const explanationDiv = document.createElement("p");
+        explanationDiv.innerText= value
+
+        entryDiv.appendChild(colorCodeDiv);
+        entryDiv.appendChild(explanationDiv);
+
+        backgroundDiv.appendChild(entryDiv);
+    }
+
+    anchorDiv.appendChild(backgroundDiv);
 }
