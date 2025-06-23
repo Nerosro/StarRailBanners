@@ -144,6 +144,11 @@ function createCharacterCard(character, rarity) {
     const loc_4star = "images/characters/4_stars/" + character.name + ".webp";
     const imgDiv = document.createElement("div");
     imgDiv.className = "characterCard rarity-" + rarity;
+    if(character.firstBanner.indexOf("_extra")>0){
+        console.warn("event character detected")
+        imgDiv.className = "characterCard rarity-" + rarity + "-special";
+    }
+
     const characterDiv = document.createElement("div");
     characterDiv.className = "character-Image";
 

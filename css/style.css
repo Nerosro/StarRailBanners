@@ -2,6 +2,10 @@
     background: linear-gradient(180deg, #885550, #c9a36a 53%);
 }
 
+.rarity-5-special {
+    background: linear-gradient(180deg, #5e57c7, #9b2a3b 53%);
+}
+
 .rerun .rarity-5 {
     background: linear-gradient(180deg, #103783, #9bafd9 53%);
     /*background: linear-gradient(180deg, #454852, #ffffff 53%);*/
