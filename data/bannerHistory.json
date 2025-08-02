@@ -328,12 +328,18 @@
   },
   "v3.5": {
     "banner_1": [
-      "CERYDRA"
-    ],
-    "banner_2": [
       "HYSILENS",
       "KAFKA",
-      "SILVER_WOLF"
+      "ASTA",
+      "ARLAN",
+      "HOOK"
+    ],
+    "banner_2": [
+      "CERYDRA",
+      "SILVER_WOLF",
+      "SAMPO",
+      "QINGQUE",
+      "DAN_HENG"
     ]
   }
 }
