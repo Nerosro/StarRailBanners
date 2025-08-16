@@ -132,6 +132,13 @@
     "rarity": 5,
     "firstBanner": "v1.3"
   },
+  "DAN_HENG_PERMANSOR_TERRAE": {
+    "name": "Dan Heng - Permansor Terrae",
+    "element": "Physical",
+    "path": "Preservation",
+    "rarity": 5,
+    "firstBanner": "v3.6"
+  },
   "DR_RATIO": {
     "name": "Dr. Ratio",
     "element": "Imaginary",
@@ -307,8 +314,15 @@
     "rarity": 4,
     "firstBanner": "v1.0"
   },
+  "MARCH_7TH_EVERNIGHT": {
+    "name": "March 7th - Evernight",
+    "element": "Ice",
+    "path": "Remembrance",
+    "rarity": 5,
+    "firstBanner": "v3.6"
+  },
   "MARCH_7TH_HUNT": {
-    "name": "March 7th",
+    "name": "March 7th - Hunt",
     "element": "Imaginary",
     "path": "The Hunt",
     "rarity": 4,
