@@ -117,7 +117,6 @@ function createCharacterData(jsonData, characters, minorDiv, version, bannerNumb
         const currentCharacter = jsonData[1][character]
 
         createBannerType(currentCharacter, version, bannerDiv, featuredDiv, rerunDiv, fourStarDiv)
-
     }
     minorDiv.append(bannerDiv);
 }

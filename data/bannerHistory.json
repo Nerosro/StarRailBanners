@@ -344,11 +344,25 @@
   },
   "v3.6": {
     "banner_1": [
-      "MARCH_7TH_EVERNIGHT"
+      "MARCH_7TH_EVERNIGHT",
+      "THE_HERTA",
+      "MISHA",
+      "GUINAIFEN",
+      "XUEYI"
     ],
     "banner_2": [
-      "DAN_HENG_PERMANSOR_TERRAE"
+      "DAN_HENG_PERMANSOR_TERRAE",
+      "ANAXA",
+      "SUSHANG",
+      "HANYA",
+      "SERVAL"
     ]
+  },
+  "v3.7": {
+    "banner_1": [
+      "CYRENE"
+    ],
+    "banner_2": []
   }
 }
 

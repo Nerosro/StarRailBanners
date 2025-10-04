@@ -118,6 +118,13 @@
     "rarity": 5,
     "firstBanner": "Standard_character"
   },
+  "CYRENE": {
+    "name": "Cyrene",
+    "element": "Ice",
+    "path": "Remembrance",
+    "rarity": 5,
+    "firstBanner": "v3.7"
+  },
   "DAN_HENG": {
     "name": "Dan Heng",
     "element": "Wind",
