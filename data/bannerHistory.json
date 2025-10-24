@@ -360,9 +360,24 @@
   },
   "v3.7": {
     "banner_1": [
-      "CYRENE"
+      "CYRENE",
+      "HYACINE",
+      "CASTORICE",
+      "TRIBBIE",
+      "MOZE",
+      "LYNX",
+      "PELA"
     ],
-    "banner_2": []
+    "banner_2": [
+      "CYRENE",
+      "PHAINON",
+      "CIPHER",
+      "MYDEI",
+      "MOZE",
+      "LYNX",
+      "PELA"
+
+    ]
   }
 }
 
