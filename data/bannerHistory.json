@@ -376,8 +376,13 @@
       "MOZE",
       "LYNX",
       "PELA"
-
     ]
+  },
+  "v3.8": {
+    "banner_1": [
+      "THE_DAHLIA"
+    ],
+    "banner_2": []
   }
 }
 

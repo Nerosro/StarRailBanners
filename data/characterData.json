@@ -468,6 +468,13 @@
     "rarity": 5,
     "firstBanner": "v3.0"
   },
+  "THE_DAHLIA": {
+    "name": "The Dahlia",
+    "element": "Fire",
+    "path": "Nihility",
+    "rarity": 5,
+    "firstBanner": "v3.8"
+  },
   "TINGYUN": {
     "name": "Tingyun",
     "element": "Lightning",

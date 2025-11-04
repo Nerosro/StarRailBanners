@@ -9,9 +9,9 @@ function createGallery(jsonData) {
     topNode.append(rootDiv)
 
     createMapLegend();
-
-    console.info(window.screen.width)
-    console.info(window.screen.height)
+    //
+    // console.info(window.screen.width)
+    // console.info(window.screen.height)
 }
 
 function createVersionDiv(jsonData, rootDiv) {
