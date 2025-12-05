@@ -9,45 +9,31 @@ function createGallery(jsonData) {
     topNode.append(rootDiv)
 
     createMapLegend();
-    //
     // console.info(window.screen.width)
     // console.info(window.screen.height)
 }
 
 function createVersionDiv(jsonData, rootDiv) {
-    //const characterName = jsonData[0]["v1.0"]["banner_1"][0]
-    //const characterData = jsonData[1][characterName]
-    //console.log(characterName)
-    //console.log(characterData)
-    //console.info(jsonData)
-    console.info(jsonData[0])
+    // console.info(jsonData) // {BannerHistory, CharacterData, Locations}
+    // console.info(jsonData[0])
+    // console.info(jsonData[1])
 
-    for (let major = 1; major <= 3; major++) {
-        const {collapseButton, versionDiv} = createHtmlElements(major);
+    const arrayVersions = jsonData[0]
+    const characterJsonData = jsonData[1]
+    const locationData = jsonData[2]
 
-        for (let minor = 0; minor <= 8; minor++) {
-            const version = "v" + major + "." + minor;
-            //console.log(version);
-            const versionData = jsonData[0][version]
+    for (const major in arrayVersions) {
+        const majorVersion = arrayVersions[major]
+        // console.log(majorVersion)
+        const {collapseButton, versionDiv} = createHtmlElements(major, locationData);
+
+        for (const version in majorVersion) {
+            // console.log(version)
+            const versionData = majorVersion[version]
+            // console.log(versionData)
+
             if (versionData !== undefined) {
-                const banner1 = versionData["banner_1"];
-                const banner2 = versionData["banner_2"];
-                //console.info(banner1)
-                //console.info(banner2)
-
-                createBannerData(jsonData, banner1, banner2, major, minor, versionDiv);
-            }
-
-            try {
-                const version = "v" + major + "." + minor + "_extra";
-                if (jsonData[0][version]) {
-                    //console.log(Special banner: version);
-                    const versionData = jsonData[0][version]
-                    const specialBanner = versionData["banner_1"];
-                    createBannerData(jsonData, specialBanner, null, major, minor, versionDiv);
-                }
-            } catch (error) {
-                console.log("No special banner found")
+                createBannerData(characterJsonData, version, versionDiv, versionData);
             }
         }
         rootDiv.append(collapseButton);
@@ -55,12 +41,12 @@ function createVersionDiv(jsonData, rootDiv) {
     }
 }
 
-function createHtmlElements(versionNumber) {
+function createHtmlElements(versionNumber, locationData) {
     const collapseButton = document.createElement("button");
     collapseButton.className = "button text";
     collapseButton.setAttribute("data-bs-toggle", "collapse")
     collapseButton.setAttribute("data-bs-target", "#" + versionNumber)
-    collapseButton.innerHTML = "Banners during version " + versionNumber + ".X"
+    collapseButton.innerHTML = locationData[versionNumber]
 
     const versionDiv = document.createElement("div");
     versionDiv.id = versionNumber;
@@ -70,23 +56,16 @@ function createHtmlElements(versionNumber) {
     return {collapseButton, versionDiv};
 }
 
+function createBannerData(charactersData, version, versionDiv, characterList) {
+    // console.log(characterList)
 
-function createBannerData(jsonData, banner1, banner2, majorVersionNumber, minorVersionNumber, versionDiv) {
-
-    let version = "v" + majorVersionNumber + "." + minorVersionNumber;
-    if (banner2 == null) {
-        version = version + "_extra";
-    }
     let minorDiv = document.createElement("div");
     minorDiv.id = version
     minorDiv.className = "minor";
     //console.info("version-" + majorVersionNumber + "_" + minorVersionNumber)
 
     createVersionHeader(version, minorDiv)
-    createCharacterData(jsonData, banner1, minorDiv, version, 1);
-    if (banner2 != null) {
-        createCharacterData(jsonData, banner2, minorDiv, version, 2);
-    }
+    createCharacterData(charactersData, minorDiv, version, characterList);
 
     versionDiv.append(minorDiv);
 }
@@ -102,26 +81,38 @@ function createVersionHeader(version, minorDiv) {
     minorDiv.append(versionDiv)
 }
 
-function createCharacterData(jsonData, characters, minorDiv, version, bannerNumber) {
-    const bannerDiv = document.createElement("div")
-    bannerDiv.className = "banner banner" + bannerNumber;
+function createCharacterData(charactersData, minorDiv, version, characterList) {
+    // console.log(characterList)
+    for (let banner = 0; banner < characterList.length; banner++) {
+        // console.log(banner)
+        const bannerDiv = document.createElement("div")
+        bannerDiv.className = "banner banner" + banner;
 
-    const featuredDiv = document.createElement("div");
-    featuredDiv.className = "character featured";
-    const rerunDiv = document.createElement("div");
-    rerunDiv.className = "character rerun";
-    const fourStarDiv = document.createElement("div");
-    fourStarDiv.className = "character fourStar";
+        const featuredDiv = document.createElement("div");
+        featuredDiv.className = "character featured";
+        bannerDiv.append(featuredDiv);
 
-    for (const character of characters) {
-        const currentCharacter = jsonData[1][character]
+        const rerunDiv = document.createElement("div");
+        rerunDiv.className = "character rerun";
+        bannerDiv.append(rerunDiv);
 
-        createBannerType(currentCharacter, version, bannerDiv, featuredDiv, rerunDiv, fourStarDiv)
+        const fourStarDiv = document.createElement("div");
+        fourStarDiv.className = "character fourStar";
+        bannerDiv.append(fourStarDiv);
+
+        for (const character of characterList[banner]) {
+            // console.log(character)
+            const currentCharacter = charactersData[character]
+            createBannerType(currentCharacter, version, bannerDiv)
+        }
+        minorDiv.append(bannerDiv);
     }
-    minorDiv.append(bannerDiv);
 }
 
-function createBannerType(characterData, version, bannerDiv, featuredDiv, rerunDiv, fourStarDiv) {
+function createBannerType(characterData, version, bannerDiv) {
+    const featuredDiv = bannerDiv.childNodes[0]
+    const rerunDiv = bannerDiv.childNodes[1]
+    const fourStarDiv = bannerDiv.childNodes[2]
 
     const rarity = characterData["rarity"];
     const initialVersion = characterData["firstBanner"];
@@ -129,14 +120,11 @@ function createBannerType(characterData, version, bannerDiv, featuredDiv, rerunD
     if (rarity === 5) {
         if (initialVersion === version) {
             featuredDiv.append(createCharacterCard(characterData, rarity));
-            bannerDiv.append(featuredDiv);
         } else {
             rerunDiv.append(createCharacterCard(characterData, rarity));
-            bannerDiv.append(rerunDiv);
         }
     } else if (rarity === 4) {
         fourStarDiv.append(createCharacterCard(characterData, rarity));
-        bannerDiv.append(fourStarDiv);
     } else {
         console.warn("Something went wrong, rarity = " + rarity)
         console.warn(characterData)
@@ -148,8 +136,8 @@ function createCharacterCard(character, rarity) {
     const loc_4star = "images/characters/4_stars/" + character.name + ".webp";
     const imgDiv = document.createElement("div");
     imgDiv.className = "characterCard rarity-" + rarity;
-    if(character.firstBanner.indexOf("_extra")>0){
-        //console.warn("event character detected")
+    if (character.firstBanner.indexOf("Collab") > 0) {
+        // console.warn("Special collaboration banner character detected")
         imgDiv.className = "characterCard rarity-" + rarity + "-special";
     }
 
@@ -206,15 +194,15 @@ function createMapLegend() {
     const anchorDiv = document.getElementsByClassName("mapLegend")[0]
     const backgroundDiv = document.createElement("div");
 
-    for (let [key, value] of rarityList){
+    for (let [key, value] of rarityList) {
 
-        console.info(key + " " + value)
+        // console.info(key + " " + value)
         const entryDiv = document.createElement("div");
-        entryDiv.className= "entryDiv"
+        entryDiv.className = "entryDiv"
         const colorCodeDiv = document.createElement("div");
-        colorCodeDiv.className="legend " + key
+        colorCodeDiv.className = "legend " + key
         const explanationDiv = document.createElement("p");
-        explanationDiv.innerText= value
+        explanationDiv.innerText = value
 
         entryDiv.appendChild(colorCodeDiv);
         entryDiv.appendChild(explanationDiv);
