@@ -25,7 +25,7 @@
     "element": "Quantum",
     "path": "The Hunt",
     "rarity": 5,
-    "firstBanner": "v3.4_extra"
+    "firstBanner": "Special banner - Fate Collab"
   },
   "ARGENTI": {
     "name": "Argenti",
@@ -152,6 +152,13 @@
     "path": "The Hunt",
     "rarity": 5,
     "firstBanner": "v1.6"
+  },
+  "EVERNIGHT": {
+    "name": "Evernight",
+    "element": "Ice",
+    "path": "Remembrance",
+    "rarity": 5,
+    "firstBanner": "v3.6"
   },
   "FEIXIAO": {
     "name": "Feixiao",
@@ -321,13 +328,6 @@
     "rarity": 4,
     "firstBanner": "v1.0"
   },
-  "MARCH_7TH_EVERNIGHT": {
-    "name": "March 7th - Evernight",
-    "element": "Ice",
-    "path": "Remembrance",
-    "rarity": 5,
-    "firstBanner": "v3.6"
-  },
   "MARCH_7TH_HUNT": {
     "name": "March 7th - Hunt",
     "element": "Imaginary",
@@ -410,7 +410,7 @@
     "element": "Wind",
     "path": "Destruction",
     "rarity": 5,
-    "firstBanner": "v3.4_extra"
+    "firstBanner": "Special banner - Fate Collab"
   },
   "SAMPO": {
     "name": "Sampo",
