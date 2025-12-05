@@ -3,9 +3,10 @@
     window.onload = function () {
         Promise.all([
             fetch("data/bannerHistory.json").then(response => response.json()),
-            fetch("data/characterData.json").then(response => response.json())
+            fetch("data/characterData.json").then(response => response.json()),
+            fetch("data/locations.json").then(response => response.json())
         ])
-            .then((historyData, characterData) => createGallery(historyData, characterData));
+            .then((historyData, characterData, locations) => createGallery(historyData, characterData, locations));
 
     }
 </script>
