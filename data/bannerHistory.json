@@ -1,388 +1,411 @@
 {
-  "v1.0": {
-    "banner_1": [
-      "SEELE",
-      "PELA",
-      "NATASHA",
-      "HOOK"
+  "1": {
+    "v1.0": [
+      [
+        "SEELE",
+        "PELA",
+        "NATASHA",
+        "HOOK"
+      ],
+      [
+        "JING_YUAN",
+        "TINGYUN",
+        "SUSHANG",
+        "MARCH_7TH"
+      ]
     ],
-    "banner_2": [
-      "JING_YUAN",
-      "TINGYUN",
-      "SUSHANG",
-      "MARCH_7TH"
+    "v1.1": [
+      [
+        "SILVER_WOLF",
+        "SERVAL",
+        "DAN_HENG",
+        "ASTA"
+      ],
+      [
+        "LOUCHA",
+        "YUKONG",
+        "QINGQUE",
+        "PELA"
+      ]
+    ],
+    "v1.2": [
+      [
+        "BLADE",
+        "SUSHANG",
+        "NATASHA",
+        "ARLAN"
+      ],
+      [
+        "KAFKA",
+        "LUKA",
+        "SERVAL",
+        "SAMPO"
+      ]
+    ],
+    "v1.3": [
+      [
+        "DAN_HENG_IMBIBITOR_LUNAE",
+        "YUKONG",
+        "MARCH_7TH",
+        "ASTA"
+      ],
+      [
+        "FU_XUAN",
+        "LYNX",
+        "PELA",
+        "HOOK"
+      ]
+    ],
+    "v1.4": [
+      [
+        "JINGLIU",
+        "TINGYUN",
+        "SAMPO",
+        "QINGQUE"
+      ],
+      [
+        "TOPAZ_AND_NUMBY",
+        "SEELE",
+        "GUINAIFEN",
+        "LUKA",
+        "SUSHANG"
+      ]
+    ],
+    "v1.5": [
+      [
+        "HUOHUO",
+        "SERVAL",
+        "DAN_HENG",
+        "ARLAN"
+      ],
+      [
+        "ARGENTI",
+        "SILVER_WOLF",
+        "HANYA",
+        "LYNX",
+        "ASTA"
+      ]
+    ],
+    "v1.6": [
+      [
+        "RUAN_MEI",
+        "BLADE",
+        "XUEYI",
+        "TINGYUN",
+        "MARCH_7TH"
+      ],
+      [
+        "DR_RATIO",
+        "KAFKA",
+        "SUSHANG",
+        "NATASHA",
+        "HOOK"
+      ]
     ]
   },
-  "v1.1": {
-    "banner_1": [
-      "SILVER_WOLF",
-      "SERVAL",
-      "DAN_HENG",
-      "ASTA"
+  "2": {
+    "v2.0": [
+      [
+        "BLACK_SWAN",
+        "DAN_HENG_IMBIBITOR_LUNAE",
+        "MISHA",
+        "GUINAIFEN",
+        "TINGYUN"
+      ],
+      [
+        "SPARKLE",
+        "JING_YUAN",
+        "HANYA",
+        "SAMPO",
+        "QINGQUE"
+      ]
     ],
-    "banner_2": [
-      "LOUCHA",
-      "YUKONG",
-      "QINGQUE",
-      "PELA"
+    "v2.1": [
+      [
+        "ACHERON",
+        "LOUCHA",
+        "GALLAGHER",
+        "PELA",
+        "DAN_HENG"
+      ],
+      [
+        "AVENTURINE",
+        "JINGLIU",
+        "LYNX",
+        "LUKA",
+        "SERVAL"
+      ]
+    ],
+    "v2.2": [
+      [
+        "ROBIN",
+        "TOPAZ_AND_NUMBY",
+        "XUEYI",
+        "HANYA",
+        "MARCH_7TH"
+      ],
+      [
+        "BOOTHILL",
+        "FU_XUAN",
+        "LUKA",
+        "PELA",
+        "HOOK"
+      ]
+    ],
+    "v2.3": [
+      [
+        "FIREFLY",
+        "RUAN_MEI",
+        "GALLAGHER",
+        "MISHA",
+        "XUEYI"
+      ],
+      [
+        "JADE",
+        "ARGENTI",
+        "SERVAL",
+        "NATASHA",
+        "ASTA"
+      ]
+    ],
+    "v2.4": [
+      [
+        "YUNLI",
+        "HUOHUO",
+        "HANYA",
+        "LYNX",
+        "YUKONG"
+      ],
+      [
+        "JIAOQIU",
+        "SPARKLE",
+        "GUINAIFEN",
+        "HOOK",
+        "ARLAN"
+      ]
+    ],
+    "v2.5": [
+      [
+        "FEIXIAO",
+        "KAFKA",
+        "BLACK_SWAN",
+        "ROBIN",
+        "MOZE",
+        "LUKA",
+        "ASTA"
+      ],
+      [
+        "LINGSHA",
+        "TOPAZ_AND_NUMBY",
+        "MISHA",
+        "GUINAIFEN",
+        "NATASHA"
+      ]
+    ],
+    "v2.6": [
+      [
+        "RAPPA",
+        "DAN_HENG_IMBIBITOR_LUNAE",
+        "XUEYI",
+        "LYNX",
+        "YUKONG"
+      ],
+      [
+        "ACHERON",
+        "AVENTURINE",
+        "SAMPO",
+        "PELA",
+        "MARCH_7TH"
+      ]
+    ],
+    "v2.7": [
+      [
+        "SUNDAY",
+        "JING_YUAN",
+        "TINGYUN",
+        "QINGQUE",
+        "ARLAN"
+      ],
+      [
+        "FUGUE",
+        "FIREFLY",
+        "GALLAGHER",
+        "MISHA",
+        "YUKONG"
+      ]
     ]
   },
-  "v1.2": {
-    "banner_1": [
-      "BLADE",
-      "SUSHANG",
-      "NATASHA",
-      "ARLAN"
+  "3": {
+    "v3.0": [
+      [
+        "THE_HERTA",
+        "LINGSHA",
+        "FEIXIAO",
+        "JADE",
+        "NATASHA",
+        "ASTA",
+        "MOZE"
+      ],
+      [
+        "AGLAEA",
+        "BOOTHILL",
+        "ROBIN",
+        "SILVER_WOLF",
+        "TINGYUN",
+        "HANYA",
+        "SUSHANG"
+      ]
     ],
-    "banner_2": [
-      "KAFKA",
-      "LUKA",
-      "SERVAL",
-      "SAMPO"
-    ]
-  },
-  "v1.3": {
-    "banner_1": [
-      "DAN_HENG_IMBIBITOR_LUNAE",
-      "YUKONG",
-      "MARCH_7TH",
-      "ASTA"
+    "v3.1": [
+      [
+        "TRIBBIE",
+        "YUNLI",
+        "LYNX",
+        "GUINAIFEN",
+        "HOOK"
+      ],
+      [
+        "MYDEI",
+        "HUOHUO",
+        "ARLAN",
+        "XUEYI",
+        "NATASHA"
+      ]
     ],
-    "banner_2": [
-      "FU_XUAN",
-      "LYNX",
-      "PELA",
-      "HOOK"
-    ]
-  },
-  "v1.4": {
-    "banner_1": [
-      "JINGLIU",
-      "TINGYUN",
-      "SAMPO",
-      "QINGQUE"
+    "v3.2": [
+      [
+        "CASTORICE",
+        "FUGUE",
+        "JIAOQIU",
+        "ACHERON",
+        "PELA",
+        "GALLAGHER",
+        "LYNX"
+      ],
+      [
+        "ANAXA",
+        "DR_RATIO",
+        "DAN_HENG",
+        "SERVAL",
+        "MOZE"
+      ]
     ],
-    "banner_2": [
-      "TOPAZ_AND_NUMBY",
-      "SEELE",
-      "GUINAIFEN",
-      "LUKA",
-      "SUSHANG"
-    ]
-  },
-  "v1.5": {
-    "banner_1": [
-      "HUOHUO",
-      "SERVAL",
-      "DAN_HENG",
-      "ARLAN"
+    "v3.3": [
+      [
+        "HYACINE",
+        "THE_HERTA",
+        "MISHA",
+        "SERVAL",
+        "NATASHA"
+      ],
+      [
+        "CIPHER",
+        "AGLAEA",
+        "QINGQUE",
+        "XUEYI",
+        "SUSHANG"
+      ]
     ],
-    "banner_2": [
-      "ARGENTI",
-      "SILVER_WOLF",
-      "HANYA",
-      "LYNX",
-      "ASTA"
-    ]
-  },
-  "v1.6": {
-    "banner_1": [
-      "RUAN_MEI",
-      "BLADE",
-      "XUEYI",
-      "TINGYUN",
-      "MARCH_7TH"
+    "v3.4": [
+      [
+        "PHAINON",
+        "TRIBBIE",
+        "SUNDAY",
+        "SPARKLE",
+        "TINGYUN",
+        "MARCH_7TH",
+        "YUKONG"
+      ],
+      [
+        "FIREFLY",
+        "JINGLIU",
+        "BLADE",
+        "HANYA",
+        "LYNX",
+        "LUKA"
+      ]
     ],
-    "banner_2": [
-      "DR_RATIO",
-      "KAFKA",
-      "SUSHANG",
-      "NATASHA",
-      "HOOK"
-    ]
-  },
-  "v2.0": {
-    "banner_1": [
-      "BLACK_SWAN",
-      "DAN_HENG_IMBIBITOR_LUNAE",
-      "MISHA",
-      "GUINAIFEN",
-      "TINGYUN"
+    "Fate collab": [
+      [
+        "SABER",
+        "ARCHER"
+      ]
     ],
-    "banner_2": [
-      "SPARKLE",
-      "JING_YUAN",
-      "HANYA",
-      "SAMPO",
-      "QINGQUE"
-    ]
-  },
-  "v2.1": {
-    "banner_1": [
-      "ACHERON",
-      "LOUCHA",
-      "GALLAGHER",
-      "PELA",
-      "DAN_HENG"
+    "v3.5": [
+      [
+        "HYSILENS",
+        "KAFKA",
+        "ASTA",
+        "ARLAN",
+        "HOOK"
+      ],
+      [
+        "CERYDRA",
+        "SILVER_WOLF",
+        "SAMPO",
+        "QINGQUE",
+        "DAN_HENG"
+      ]
     ],
-    "banner_2": [
-      "AVENTURINE",
-      "JINGLIU",
-      "LYNX",
-      "LUKA",
-      "SERVAL"
-    ]
-  },
-  "v2.2": {
-    "banner_1": [
-      "ROBIN",
-      "TOPAZ_AND_NUMBY",
-      "XUEYI",
-      "HANYA",
-      "MARCH_7TH"
+    "v3.6": [
+      [
+        "EVERNIGHT",
+        "THE_HERTA",
+        "MISHA",
+        "GUINAIFEN",
+        "XUEYI"
+      ],
+      [
+        "DAN_HENG_PERMANSOR_TERRAE",
+        "ANAXA",
+        "SUSHANG",
+        "HANYA",
+        "SERVAL"
+      ]
     ],
-    "banner_2": [
-      "BOOTHILL",
-      "FU_XUAN",
-      "LUKA",
-      "PELA",
-      "HOOK"
-    ]
-  },
-  "v2.3": {
-    "banner_1": [
-      "FIREFLY",
-      "RUAN_MEI",
-      "GALLAGHER",
-      "MISHA",
-      "XUEYI"
+    "v3.7": [
+      [
+        "CYRENE",
+        "HYACINE",
+        "CASTORICE",
+        "TRIBBIE",
+        "MOZE",
+        "LYNX",
+        "PELA"
+      ],
+      [
+        "CYRENE",
+        "PHAINON",
+        "CIPHER",
+        "MYDEI",
+        "MOZE",
+        "LYNX",
+        "PELA"
+      ]
     ],
-    "banner_2": [
-      "JADE",
-      "ARGENTI",
-      "SERVAL",
-      "NATASHA",
-      "ASTA"
+    "v3.8": [
+      [
+        "THE_DAHLIA",
+        "FIREFLY",
+        "GALLAGHER",
+        "LUKA",
+        "MARCH_7TH"
+      ],
+      [
+        "FUGUE",
+        "LINGSHA",
+        "SAMPO",
+        "NATASHA",
+        "ARLAN"
+      ],
+      [
+        "AGLAEA",
+        "SUNDAY",
+        "TINGYUN",
+        "YUKONG",
+        "DAN_HENG"
+      ]
     ]
-  },
-  "v2.4": {
-    "banner_1": [
-      "YUNLI",
-      "HUOHUO",
-      "HANYA",
-      "LYNX",
-      "YUKONG"
-    ],
-    "banner_2": [
-      "JIAOQIU",
-      "SPARKLE",
-      "GUINAIFEN",
-      "HOOK",
-      "ARLAN"
-    ]
-  },
-  "v2.5": {
-    "banner_1": [
-      "FEIXIAO",
-      "KAFKA",
-      "BLACK_SWAN",
-      "ROBIN",
-      "MOZE",
-      "LUKA",
-      "ASTA"
-    ],
-    "banner_2": [
-      "LINGSHA",
-      "TOPAZ_AND_NUMBY",
-      "MISHA",
-      "GUINAIFEN",
-      "NATASHA"
-    ]
-  },
-  "v2.6": {
-    "banner_1": [
-      "RAPPA",
-      "DAN_HENG_IMBIBITOR_LUNAE",
-      "XUEYI",
-      "LYNX",
-      "YUKONG"
-    ],
-    "banner_2": [
-      "ACHERON",
-      "AVENTURINE",
-      "SAMPO",
-      "PELA",
-      "MARCH_7TH"
-    ]
-  },
-  "v2.7": {
-    "banner_1": [
-      "SUNDAY",
-      "JING_YUAN",
-      "TINGYUN",
-      "QINGQUE",
-      "ARLAN"
-    ],
-    "banner_2": [
-      "FUGUE",
-      "FIREFLY",
-      "GALLAGHER",
-      "MISHA",
-      "YUKONG"
-    ]
-  },
-  "v3.0": {
-    "banner_1": [
-      "THE_HERTA",
-      "LINGSHA",
-      "FEIXIAO",
-      "JADE",
-      "NATASHA",
-      "ASTA",
-      "MOZE"
-    ],
-    "banner_2": [
-      "AGLAEA",
-      "BOOTHILL",
-      "ROBIN",
-      "SILVER_WOLF",
-      "TINGYUN",
-      "HANYA",
-      "SUSHANG"
-    ]
-  },
-  "v3.1": {
-    "banner_1": [
-      "TRIBBIE",
-      "YUNLI",
-      "LYNX",
-      "GUINAIFEN",
-      "HOOK"
-    ],
-    "banner_2": [
-      "MYDEI",
-      "HUOHUO",
-      "ARLAN",
-      "XUEYI",
-      "NATASHA"
-    ]
-  },
-  "v3.2": {
-    "banner_1": [
-      "CASTORICE",
-      "FUGUE",
-      "JIAOQIU",
-      "ACHERON",
-      "PELA",
-      "GALLAGHER",
-      "LYNX"
-    ],
-    "banner_2": [
-      "ANAXA",
-      "DR_RATIO",
-      "DAN_HENG",
-      "SERVAL",
-      "MOZE"
-    ]
-  },
-  "v3.3": {
-    "banner_1": [
-      "HYACINE",
-      "THE_HERTA",
-      "MISHA",
-      "SERVAL",
-      "NATASHA"
-    ],
-    "banner_2": [
-      "CIPHER",
-      "AGLAEA",
-      "QINGQUE",
-      "XUEYI",
-      "SUSHANG"
-    ]
-  },
-  "v3.4": {
-    "banner_1": [
-      "PHAINON",
-      "TRIBBIE",
-      "SUNDAY",
-      "SPARKLE",
-      "TINGYUN",
-      "MARCH_7TH",
-      "YUKONG"
-    ],
-    "banner_2": [
-      "FIREFLY",
-      "JINGLIU",
-      "BLADE",
-      "HANYA",
-      "LYNX",
-      "LUKA"
-    ]
-  },
-  "v3.4_extra": {
-    "banner_1": [
-      "SABER",
-      "ARCHER"
-    ]
-  },
-  "v3.5": {
-    "banner_1": [
-      "HYSILENS",
-      "KAFKA",
-      "ASTA",
-      "ARLAN",
-      "HOOK"
-    ],
-    "banner_2": [
-      "CERYDRA",
-      "SILVER_WOLF",
-      "SAMPO",
-      "QINGQUE",
-      "DAN_HENG"
-    ]
-  },
-  "v3.6": {
-    "banner_1": [
-      "MARCH_7TH_EVERNIGHT",
-      "THE_HERTA",
-      "MISHA",
-      "GUINAIFEN",
-      "XUEYI"
-    ],
-    "banner_2": [
-      "DAN_HENG_PERMANSOR_TERRAE",
-      "ANAXA",
-      "SUSHANG",
-      "HANYA",
-      "SERVAL"
-    ]
-  },
-  "v3.7": {
-    "banner_1": [
-      "CYRENE",
-      "HYACINE",
-      "CASTORICE",
-      "TRIBBIE",
-      "MOZE",
-      "LYNX",
-      "PELA"
-    ],
-    "banner_2": [
-      "CYRENE",
-      "PHAINON",
-      "CIPHER",
-      "MYDEI",
-      "MOZE",
-      "LYNX",
-      "PELA"
-    ]
-  },
-  "v3.8": {
-    "banner_1": [
-      "THE_DAHLIA"
-    ],
-    "banner_2": []
   }
 }
 
