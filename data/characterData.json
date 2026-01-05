@@ -447,6 +447,13 @@
     "rarity": 5,
     "firstBanner": "v2.0"
   },
+  "SPARXIE": {
+    "name": "Sparxie",
+    "element": "Fire",
+    "path": "Elation",
+    "rarity": 5,
+    "firstBanner": "v4.0"
+  },
   "SUNDAY": {
     "name": "Sunday",
     "element": "Imaginary",
@@ -544,6 +551,13 @@
     "path": "The_Hunt",
     "rarity": 5,
     "firstBanner": "Standard_character"
+  },
+  "YAO_GUANG": {
+    "name": "Yao Guang",
+    "element": "Physical",
+    "path": "Elation",
+    "rarity": 5,
+    "firstBanner": "v4.0"
   },
   "YUKONG": {
     "name": "Yukong",
