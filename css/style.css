@@ -76,15 +76,17 @@ body {
 }
 
 .elementIcon {
-    background: rgba(165, 173, 190, 0.5);
-    border-radius: 5px;
-    width: 40px;
+    border-radius: 999px;
+    background: #262626;
+    padding: min(max(calc(15%),2px),5px);
+    width: 50px;
 }
 
 .pathIcon {
-    background: rgba(165, 173, 190, 0.5);
-    border-radius: 5px;
-    width: 40px;
+    border-radius: 999px;
+    background: #262626;
+    padding: min(max(calc(15%),2px),5px);
+    width: 50px;
 }
 
 .button {
