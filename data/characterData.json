@@ -23,7 +23,7 @@
   "ARCHER": {
     "name": "Archer",
     "element": "Quantum",
-    "path": "The Hunt",
+    "path": "The_Hunt",
     "rarity": 5,
     "firstBanner": "Special banner - Fate Collab"
   },
@@ -79,7 +79,7 @@
   "BOOTHILL": {
     "name": "Boothill",
     "element": "Physical",
-    "path": "The Hunt",
+    "path": "The_Hunt",
     "rarity": 5,
     "firstBanner": "v2.2"
   },
@@ -128,7 +128,7 @@
   "DAN_HENG": {
     "name": "Dan Heng",
     "element": "Wind",
-    "path": "The Hunt",
+    "path": "The_Hunt",
     "rarity": 4,
     "firstBanner": "v1.1"
   },
@@ -149,7 +149,7 @@
   "DR_RATIO": {
     "name": "Dr. Ratio",
     "element": "Imaginary",
-    "path": "The Hunt",
+    "path": "The_Hunt",
     "rarity": 5,
     "firstBanner": "v1.6"
   },
@@ -163,7 +163,7 @@
   "FEIXIAO": {
     "name": "Feixiao",
     "element": "Wind",
-    "path": "The Hunt",
+    "path": "The_Hunt",
     "rarity": 5,
     "firstBanner": "v2.5"
   },
@@ -331,7 +331,7 @@
   "MARCH_7TH_HUNT": {
     "name": "March 7th - Hunt",
     "element": "Imaginary",
-    "path": "The Hunt",
+    "path": "The_Hunt",
     "rarity": 4,
     "firstBanner": "Story"
   },
@@ -345,7 +345,7 @@
   "MOZE": {
     "name": "Moze",
     "element": "Lightning",
-    "path": "The Hunt",
+    "path": "The_Hunt",
     "rarity": 4,
     "firstBanner": "v2.5"
   },
@@ -422,7 +422,7 @@
   "SEELE": {
     "name": "Seele",
     "element": "Quantum",
-    "path": "The Hunt",
+    "path": "The_Hunt",
     "rarity": 5,
     "firstBanner": "v1.0"
   },
@@ -457,7 +457,7 @@
   "SUSHANG": {
     "name": "Sushang",
     "element": "Physical",
-    "path": "The Hunt",
+    "path": "The_Hunt",
     "rarity": 4,
     "firstBanner": "v1.0"
   },
@@ -485,7 +485,7 @@
   "TOPAZ_AND_NUMBY": {
     "name": "Topaz & Numby",
     "element": "Fire",
-    "path": "The Hunt",
+    "path": "The_Hunt",
     "rarity": 5,
     "firstBanner": "v1.4"
   },
@@ -541,7 +541,7 @@
   "YANQING": {
     "name": "Yanqing",
     "element": "Ice",
-    "path": "The Hunt",
+    "path": "The_Hunt",
     "rarity": 5,
     "firstBanner": "Standard_character"
   },

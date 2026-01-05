@@ -164,14 +164,14 @@ function createCharacterCard(character, rarity) {
 }
 
 function createIcons(character) {
-    const path = "images/paths/" + character.path + ".webp"
+    const path = "images/paths/Path_" + character.path + ".webp"
     const element = "images/elements/" + character.element + ".webp"
 
     const iconDiv = document.createElement("div");
     iconDiv.className = "floating-icon";
 
     let iconPath = document.createElement("img");
-    iconPath.className = "pathIcon"
+    iconPath.className = "pathIcon darkBG"
     iconPath.src = path;
 
     let iconElement = document.createElement("img");
