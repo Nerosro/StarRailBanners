@@ -41,6 +41,14 @@
     "rarity": 4,
     "firstBanner": "v1.2"
   },
+  "ASHVEIL": {
+    "name": "Ashveil",
+    "element": "Lightning",
+    "path": "The_Hunt",
+    "rarity": 5,
+    "firstBanner": "v4.1"
+  },
+
   "ASTA": {
     "name": "Asta",
     "element": "Fire",
