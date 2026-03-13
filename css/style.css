@@ -78,14 +78,14 @@ body {
 .elementIcon {
     border-radius: 999px;
     background: #262626;
-    padding: min(max(calc(15%),2px),5px);
+    padding: min(max(calc(15%),2px),0px);
     width: 50px;
 }
 
 .pathIcon {
     border-radius: 999px;
     background: #262626;
-    padding: min(max(calc(15%),2px),5px);
+    padding: min(max(calc(15%),2px),0px);
     width: 50px;
 }
 
