@@ -48,7 +48,6 @@
     "rarity": 5,
     "firstBanner": "v4.1"
   },
-
   "ASTA": {
     "name": "Asta",
     "element": "Fire",
@@ -160,6 +159,13 @@
     "path": "The_Hunt",
     "rarity": 5,
     "firstBanner": "v1.6"
+  },
+  "EVANESCIA": {
+    "name": "Evanescia",
+    "element": "Physical",
+    "path": "Elation",
+    "rarity": 5,
+    "firstBanner": "v4.2"
   },
   "EVERNIGHT": {
     "name": "Evernight",
@@ -448,6 +454,13 @@
     "rarity": 5,
     "firstBanner": "v1.1"
   },
+  "SILVER_WOLF_LV999": {
+    "name": "Silver Wolf LV.999",
+    "element": "Imaginary",
+    "path": "Elation",
+    "rarity": 5,
+    "firstBanner": "v4.2"
+  },
   "SPARKLE": {
     "name": "Sparkle",
     "element": "Quantum",
@@ -508,6 +521,13 @@
     "name": "Trailblazer",
     "element": "Physical",
     "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "Story"
+  },
+  "TRAILBLAZER_ELATION": {
+    "name": "Trailblazer",
+    "element": "Lightning",
+    "path": "Elation",
     "rarity": 5,
     "firstBanner": "Story"
   },
