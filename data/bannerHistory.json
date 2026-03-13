@@ -431,7 +431,18 @@
     ],
     "v4.1": [
       [
-        "ASHVEIL"
+        "ASHVEIL",
+		"HYACINE",
+		"MOZE",
+		"MISHA",
+		"ASTA"
+      ],
+	  [
+        "ASHVEIL",
+		"BOOTHILL",
+		"MOZE",
+		"MISHA",
+		"ASTA"
       ]
     ],
     "v4.2": [
