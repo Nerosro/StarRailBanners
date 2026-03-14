@@ -46,7 +46,8 @@
     "element": "Lightning",
     "path": "The_Hunt",
     "rarity": 5,
-    "firstBanner": "v4.1"
+    "firstBanner": "v4.1",
+    "fullPatch": true
   },
   "ASTA": {
     "name": "Asta",
@@ -130,7 +131,8 @@
     "element": "Ice",
     "path": "Remembrance",
     "rarity": 5,
-    "firstBanner": "v3.7"
+    "firstBanner": "v3.7",
+    "fullPatch": true
   },
   "DAN_HENG": {
     "name": "Dan Heng",
@@ -585,7 +587,8 @@
     "element": "Physical",
     "path": "Elation",
     "rarity": 5,
-    "firstBanner": "v4.0"
+    "firstBanner": "v4.0",
+    "fullPatch": true
   },
   "YUKONG": {
     "name": "Yukong",

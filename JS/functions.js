@@ -1,6 +1,6 @@
 function createGallery(jsonData) {
     const topNode = document.getElementsByClassName("content")[0]
-    let rootDiv = document.createElement("div");
+    const rootDiv = document.createElement("div");
     rootDiv.className = "root"
     rootDiv.id = "root"
 
@@ -59,7 +59,7 @@ function createHtmlElements(versionNumber, locationData) {
 function createBannerData(charactersData, version, versionDiv, characterList) {
     // console.log(characterList)
 
-    let minorDiv = document.createElement("div");
+    const minorDiv = document.createElement("div");
     minorDiv.id = version
     minorDiv.className = "minor";
     //console.info("version-" + majorVersionNumber + "_" + minorVersionNumber)
@@ -116,10 +116,11 @@ function createBannerType(characterData, version, bannerDiv) {
 
     const rarity = characterData["rarity"];
     const initialVersion = characterData["firstBanner"];
+    const fullPatch = characterData["fullPatch"]
 
     if (rarity === 5) {
         if (initialVersion === version) {
-            featuredDiv.append(createCharacterCard(characterData, rarity));
+            featuredDiv.append(createCharacterCard(characterData, rarity, fullPatch));
         } else {
             rerunDiv.append(createCharacterCard(characterData, rarity));
         }
@@ -131,36 +132,43 @@ function createBannerType(characterData, version, bannerDiv) {
     }
 }
 
-function createCharacterCard(character, rarity) {
-    const loc_5star = "images/characters/5_stars/" + character.name + ".webp";
-    const loc_4star = "images/characters/4_stars/" + character.name + ".webp";
+function createCharacterCard(character, rarity, fullPatch) {
+    const image_loc = "images/characters/" + rarity + "_stars/" + character.name + ".webp";
     const imgDiv = document.createElement("div");
-    imgDiv.className = "characterCard rarity-" + rarity;
-    if (character.firstBanner.indexOf("Collab") > 0) {
-        // console.warn("Special collaboration banner character detected")
-        imgDiv.className = "characterCard rarity-" + rarity + "-special";
-    }
+    imgDiv.className = "characterCard";
+
+    const rarityBackground = addRarityBackground(character, rarity, fullPatch)
 
     const characterDiv = document.createElement("div");
-    characterDiv.className = "character-Image";
+    characterDiv.className = "characterImage";
 
-    let imgCharacter = document.createElement("img");
+    const imgCharacter = document.createElement("img");
     imgCharacter.className = "characterIcon"
-    if (rarity === 4) {
-        imgCharacter.src = loc_4star;
-    } else if (rarity === 5) {
-        imgCharacter.src = loc_5star;
-    } else {
-        console.log(rarity);
-    }
+    imgCharacter.src = image_loc;
     imgCharacter.alt = character["name"];
 
-    let iconDiv = createIcons(character);
+    const iconDiv = createIcons(character);
     characterDiv.append(imgCharacter);
 
     imgDiv.append(characterDiv);
+    imgDiv.append(rarityBackground);
     imgDiv.append(iconDiv);
     return imgDiv;
+}
+
+function addRarityBackground(character, rarity, fullPatch) {
+    let backgroundDiv = document.createElement("div");
+    backgroundDiv.className = "rarity-" + rarity;
+
+    if (character.firstBanner.indexOf("Collab") > 0) {
+        // console.warn("Special collaboration banner character detected")
+        backgroundDiv.className = "rarity-" + rarity + "-special";
+    }
+
+    if (fullPatch) {
+        backgroundDiv.className = "prismatic";
+    }
+    return backgroundDiv
 }
 
 function createIcons(character) {
@@ -170,11 +178,11 @@ function createIcons(character) {
     const iconDiv = document.createElement("div");
     iconDiv.className = "floating-icon";
 
-    let iconPath = document.createElement("img");
+    const iconPath = document.createElement("img");
     iconPath.className = "pathIcon darkBG"
     iconPath.src = path;
 
-    let iconElement = document.createElement("img");
+    const iconElement = document.createElement("img");
     iconElement.className = "elementIcon"
     iconElement.src = element;
 
@@ -186,6 +194,7 @@ function createIcons(character) {
 function createMapLegend() {
     const rarityList = new Map([
         ["rarity-5", "New 5-star character, available the first time"],
+        ["prismatic", "Characters with this effect will be available on all banners of the version"],
         ["rerun", "Returning 5-star character"],
         ["rarity-5-special", "Special characters, reserved for collab events. Characters will likely not return"],
         ["rarity-4", "4-star characters featured with the 5-star character banner"]

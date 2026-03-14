@@ -1,3 +1,18 @@
+:root {
+    /*variables*/
+    --prismatic-effect: linear-gradient(
+            105deg,
+            #b9b6e5,
+            #a8c8f0,
+            #9edbf0,
+            #a6efd8,
+            #c9e6f5,
+            #e3c6f3,
+            #d2b6ef
+    );
+    /*--test: linear-gradient(105deg, #f11720, #43f308, #0c7cec, #f1f108);*/
+}
+
 .rarity-5 {
     background: linear-gradient(180deg, #885550, #c9a36a 53%);
 }
@@ -13,6 +28,37 @@
 
 .rarity-4 {
     background: linear-gradient(180deg, #343659, #8a5fcc 53%);
+}
+
+.prismatic {
+    inset: 0;
+    background: var(--prismatic-effect);
+    background-size: 400% 100%;
+    opacity: 1;
+    animation: prism-effect 10s infinite alternate;
+}
+
+@keyframes prism-effect {
+    0% {
+        background-position: left
+    }
+    100% {
+        background-position: right
+    }
+}
+
+.characterCard .rarity-5,
+.characterCard .rarity-5-special,
+.characterCard .rarity-4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.characterCard .prismatic {
+    position: absolute;
+    z-index: 20;
 }
 
 body {
@@ -46,6 +92,7 @@ body {
 }
 
 .characterCard {
+    display: flex;
     margin-left: 5px;
     margin-bottom: 5px;
     position: relative;
@@ -56,15 +103,20 @@ body {
     height: 385px;
 }
 
-.rarity-4 .characterIcon {
+.fourStar .characterIcon {
     display: flex;
     flex-direction: column;
     width: 100px;
     height: 125px;
 }
 
+.characterImage {
+    z-index: 100;
+}
+
 .floating-icon {
     display: none;
+    z-index: 100;
 }
 
 .characterCard:hover .floating-icon {
@@ -78,14 +130,14 @@ body {
 .elementIcon {
     border-radius: 999px;
     background: #262626;
-    padding: min(max(calc(15%),2px),0px);
+    padding: min(max(calc(15%), 2px), 0px);
     width: 50px;
 }
 
 .pathIcon {
     border-radius: 999px;
     background: #262626;
-    padding: min(max(calc(15%),2px),0px);
+    padding: min(max(calc(15%), 2px), 0px);
     width: 50px;
 }
 
@@ -139,6 +191,7 @@ footer {
     background-color: dimgray;
     color: #000;
     width: 100%;
+    z-index: 100;
 }
 
 .footerDiv {
