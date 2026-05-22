@@ -26,7 +26,7 @@
     "path": "The_Hunt",
     "rarity": 5,
     "firstBanner": "Special banner - Fate Collab",
-    "collab": "true"
+    "collab": true
   },
   "ARGENTI": {
     "name": "Argenti",
@@ -435,7 +435,7 @@
     "path": "Destruction",
     "rarity": 5,
     "firstBanner": "Fate Collab",
-    "collab": "true"
+    "collab": true
   },
   "SAMPO": {
     "name": "Sampo",

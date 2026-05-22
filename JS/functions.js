@@ -1,3 +1,6 @@
+const createGallery = (function() {
+"use strict";
+
 function createGallery(jsonData) {
     const topNode = document.getElementsByClassName("content")[0]
     const rootDiv = document.createElement("div");
@@ -24,18 +27,19 @@ function createVersionDiv(jsonData, rootDiv) {
 
     for (const major in arrayVersions) {
         const majorVersion = arrayVersions[major]
-        // console.log(majorVersion)
         const {collapseButton, versionDiv} = createHtmlElements(major, locationData);
 
-        for (const version in majorVersion) {
-            // console.log(version)
-            const versionData = majorVersion[version]
-            // console.log(versionData)
-
-            if (versionData !== undefined) {
-                createBannerData(characterJsonData, version, versionDiv, versionData);
+        // Defer rendering until the section is first expanded
+        versionDiv.addEventListener("show.bs.collapse", function onFirstShow() {
+            versionDiv.removeEventListener("show.bs.collapse", onFirstShow);
+            for (const version in majorVersion) {
+                const versionData = majorVersion[version]
+                if (versionData !== undefined) {
+                    createBannerData(characterJsonData, version, versionDiv, versionData);
+                }
             }
-        }
+        });
+
         rootDiv.append(collapseButton);
         rootDiv.append(versionDiv);
     }
@@ -101,8 +105,11 @@ function createCharacterData(charactersData, minorDiv, version, characterList) {
         bannerDiv.append(fourStarDiv);
 
         for (const character of characterList[banner]) {
-            // console.log(character)
             const currentCharacter = charactersData[character]
+            if (!currentCharacter) {
+                console.warn("Unknown character ID: " + character)
+                continue;
+            }
             createBannerType(currentCharacter, version, bannerDiv)
         }
         minorDiv.append(bannerDiv);
@@ -110,9 +117,9 @@ function createCharacterData(charactersData, minorDiv, version, characterList) {
 }
 
 function createBannerType(characterData, version, bannerDiv) {
-    const featuredDiv = bannerDiv.childNodes[0]
-    const rerunDiv = bannerDiv.childNodes[1]
-    const fourStarDiv = bannerDiv.childNodes[2]
+    const featuredDiv = bannerDiv.querySelector(".featured")
+    const rerunDiv = bannerDiv.querySelector(".rerun")
+    const fourStarDiv = bannerDiv.querySelector(".fourStar")
 
     const rarity = characterData["rarity"];
     const initialVersion = characterData["firstBanner"];
@@ -146,6 +153,7 @@ function createCharacterCard(character, rarity, fullPatch) {
     imgCharacter.className = "characterIcon"
     imgCharacter.src = image_loc;
     imgCharacter.alt = character["name"];
+    imgCharacter.loading = "lazy";
 
     const iconDiv = createIcons(character);
     characterDiv.append(imgCharacter);
@@ -160,7 +168,7 @@ function addRarityBackground(character, rarity, fullPatch) {
     let backgroundDiv = document.createElement("div");
     backgroundDiv.className = "rarity-" + rarity;
 
-    if (character.firstBanner.indexOf("Collab") > 0) {
+    if (character.collab === true) {
         // console.warn("Special collaboration banner character detected")
         backgroundDiv.className = "rarity-" + rarity + "-special";
     }
@@ -221,3 +229,6 @@ function createMapLegend() {
 
     anchorDiv.appendChild(backgroundDiv);
 }
+
+return createGallery;
+})();
