@@ -410,36 +410,36 @@
     "v4.0": [
       [
         "YAO_GUANG",
-		"EVERNIGHT",
-		"HYSILENS",
-		"BLACK_SWAN",
-		"PELA",
-		"HANYA",
-		"QINGQUE"
+        "EVERNIGHT",
+        "HYSILENS",
+        "BLACK_SWAN",
+        "PELA",
+        "HANYA",
+        "QINGQUE"
       ],
       [
         "SPARXIE",
         "CERYDRA",
         "RAPPA",
         "SPARKLE",
-		"PELA",
-		"HANYA",
-		"QINGQUE"
+        "PELA",
+        "HANYA",
+        "QINGQUE"
       ]
     ],
     "v4.1": [
       [
         "ASHVEIL",
-		"HYACINE",
-		"MOZE",
-		"MISHA",
-		"ASTA"
+        "HYACINE",
+        "MOZE",
+        "MISHA",
+        "ASTA"
       ],
-	  [
-		"BOOTHILL",
-		"MOZE",
-		"MISHA",
-		"ASTA"
+      [
+        "BOOTHILL",
+        "MOZE",
+        "MISHA",
+        "ASTA"
       ]
     ],
     "v4.2": [
@@ -449,8 +449,8 @@
 		"CASTORICE",
 		"FIREFLY",
         "GALLAGHER",
-		"XUEYI",
-		"HOOK"
+        "XUEYI",
+        "HOOK"
       ],
       [
         "EVANESCIA",
@@ -460,6 +460,22 @@
 		"GUINAIFEN",
 		"LYNX",
 		"SUSHANG"
+      ]
+    ],
+    "v4.3": [
+      [
+        "MORTENAX",
+        "YAO_GUANG",
+        "SAMPO",
+        "LUKA",
+        "TINGYUN"
+      ],
+      [
+        "CYRENE",
+        "PHAINON",
+        "MARCH_7TH",
+        "ARLAN",
+        "YUKONG"
       ]
     ]
   }

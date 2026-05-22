@@ -25,7 +25,8 @@
     "element": "Quantum",
     "path": "The_Hunt",
     "rarity": 5,
-    "firstBanner": "Special banner - Fate Collab"
+    "firstBanner": "Special banner - Fate Collab",
+    "collab": "true"
   },
   "ARGENTI": {
     "name": "Argenti",
@@ -358,6 +359,13 @@
     "rarity": 4,
     "firstBanner": "v2.0"
   },
+  "MORTENAX": {
+    "name": "Mortenax",
+    "element": "Fire",
+    "path": "Nihility",
+    "rarity": 5,
+    "firstBanner": "v4.3"
+  },
   "MOZE": {
     "name": "Moze",
     "element": "Lightning",
@@ -426,7 +434,8 @@
     "element": "Wind",
     "path": "Destruction",
     "rarity": 5,
-    "firstBanner": "Special banner - Fate Collab"
+    "firstBanner": "Fate Collab",
+    "collab": "true"
   },
   "SAMPO": {
     "name": "Sampo",
