@@ -219,6 +219,14 @@
     "rarity": 5,
     "firstBanner": "Standard_character"
   },
+  "GILGAMESH": {
+    "name": "Gilgamesh",
+    "element": "Lightning",
+    "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "Fate Collab 2",
+    "collab": true
+  },
   "GUINAIFEN": {
     "name": "Guinaifen",
     "element": "Fire",
@@ -246,6 +254,13 @@
     "path": "Erudition",
     "rarity": 5,
     "firstBanner": "Standard_character"
+  },
+  "HIMEKO_NOVA": {
+    "name": "Himeko Nova",
+    "element": "Fire",
+    "path": "Erudition",
+    "rarity": 5,
+    "firstBanner": "v4.4"
   },
   "HOOK": {
     "name": "Hook",
@@ -414,6 +429,14 @@
     "path": "Erudition",
     "rarity": 5,
     "firstBanner": "v2.6"
+  },
+  "RIN_TOHSAKA": {
+    "name": "Rin Tohsaka",
+    "element": "Quantum",
+    "path": "Erudition",
+    "rarity": 5,
+    "firstBanner": "Fate Collab 2",
+    "collab": true
   },
   "ROBIN": {
     "name": "Robin",
