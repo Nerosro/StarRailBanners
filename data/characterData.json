@@ -374,8 +374,8 @@
     "rarity": 4,
     "firstBanner": "v2.0"
   },
-  "MORTENAX": {
-    "name": "Mortenax",
+  "MORTENAX_BLADE": {
+    "name": "Mortenax Blade",
     "element": "Fire",
     "path": "Nihility",
     "rarity": 5,
