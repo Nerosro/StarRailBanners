@@ -64,6 +64,13 @@
     "rarity": 5,
     "firstBanner": "v2.1"
   },
+  "AVENTURINE_WAVEFLAIR": {
+    "name": "Aventurine Waveflair",
+    "element": "Quantum",
+    "path": "Elation",
+    "rarity": 5,
+    "firstBanner": "v4.5"
+  },
   "BAILU": {
     "name": "Bailu",
     "element": "Lightning",
@@ -444,6 +451,13 @@
     "path": "Harmony",
     "rarity": 5,
     "firstBanner": "v2.2"
+  },
+  "ROBIN_SUMMERETTO": {
+    "name": "Robin Summeretto",
+    "element": "Wind",
+    "path": "Remembrance",
+    "rarity": 5,
+    "firstBanner": "v4.5"
   },
   "RUAN_MEI": {
     "name": "Ruan Mei",
