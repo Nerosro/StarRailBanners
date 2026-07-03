@@ -267,7 +267,8 @@
     "element": "Fire",
     "path": "Erudition",
     "rarity": 5,
-    "firstBanner": "v4.4"
+    "firstBanner": "v4.4",
+    "fullPatch": true
   },
   "HOOK": {
     "name": "Hook",
