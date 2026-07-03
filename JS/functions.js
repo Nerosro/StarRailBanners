@@ -174,7 +174,7 @@ function addRarityBackground(character, rarity, fullPatch) {
     }
 
     if (fullPatch) {
-        backgroundDiv.className = "prismatic";
+        backgroundDiv.className = "prismatic shimmer";
     }
     return backgroundDiv
 }
@@ -202,7 +202,7 @@ function createIcons(character) {
 function createMapLegend() {
     const rarityList = new Map([
         ["rarity-5", "New 5-star character, available the first time"],
-        ["prismatic", "Characters with this effect will be available on all banners of the version"],
+        ["prismatic shimmer", "Characters with this effect will be available on all banners of the version"],
         ["rerun", "Returning 5-star character"],
         ["rarity-5-special", "Special characters, reserved for collab events. Characters will likely not return"],
         ["rarity-4", "4-star characters featured with the 5-star character banner"]

@@ -2,14 +2,15 @@
     /*variables*/
     --prismatic-effect: linear-gradient(
             105deg,
-            #b9b6e5,
-            #a8c8f0,
-            #9edbf0,
-            #a6efd8,
-            #c9e6f5,
-            #e3c6f3,
-            #d2b6ef
+            #d4a5d8,
+            #a8c5e8,
+            #8dd4e8,
+            #88e8c5,
+            #a8c5e8,
+            #d4a5d8
     );
+    --shimmer-sweep-color: rgb(255 255 255 / 0.56) 50%
+    /*--shimmer-sweep-color: rgb(223 192 158 / 0.56) 50%*/
     /*--test: linear-gradient(105deg, #f11720, #43f308, #0c7cec, #f1f108);*/
 }
 
@@ -96,6 +97,7 @@ body {
     margin-left: 5px;
     margin-bottom: 5px;
     position: relative;
+    overflow: hidden;
 }
 
 .characterIcon {
@@ -116,7 +118,7 @@ body {
 
 .floating-icon {
     display: none;
-    z-index: 100;
+    z-index: 150;
 }
 
 .characterCard:hover .floating-icon {
@@ -191,7 +193,7 @@ footer {
     background-color: dimgray;
     color: #000;
     width: 100%;
-    z-index: 100;
+    z-index: 200;
 }
 
 .footerDiv {
@@ -230,8 +232,8 @@ footer {
     font-size: 22px;
     font-weight: bold;
     margin-right: 10px;
+    position: relative;
 }
-
 
 .entryDiv .rerun {
     /* This is here because the rerun banner is decided by the rerun or featured tag on the parentDiv */
@@ -244,4 +246,151 @@ footer {
     width: 100px;
     height: 100px;
     margin: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Shimmer effect on character image and simple legend shimmer (non-prismatic) */
+.characterCard:has(.shimmer) .characterImage::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        105deg,
+        transparent 40%,
+        var(--shimmer-sweep-color),
+        transparent 55%
+    );
+    animation: shimmer-sweep 6s infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes shimmer-sweep {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.characterCard:has(.prismatic)::after,
+.characterCard:has(.prismatic)::before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+}
+
+/* Inner shadow frame */
+.characterCard:has(.prismatic)::before {
+    inset: 0;
+    box-shadow:
+        inset 0 0 25px 5px rgba(205, 127, 50, 1),
+        inset 0 0 45px 8px rgba(232, 155, 79, 0.8),
+        inset 0 0 60px 10px rgba(245, 167, 66, 0.6);
+    animation: edge-glow 4s ease-in-out infinite;
+    z-index: 150;
+}
+
+/* Outer glow accent */
+.characterCard:has(.prismatic)::after {
+    inset: -3px;
+    background: linear-gradient(
+        135deg,
+        rgba(136, 85, 80, 1) 0%,
+        rgba(205, 127, 50, 1) 25%,
+        rgba(232, 155, 79, 1) 50%,
+        rgba(205, 127, 50, 1) 75%,
+        rgba(136, 85, 80, 1) 100%
+    );
+    background-size: 200% 200%;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    padding: 2px;
+    animation: edge-flow 6s linear infinite;
+    z-index: 5;
+}
+
+.legend.prismatic::after,
+.legend.prismatic::before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+}
+
+.legend.prismatic::before {
+    inset: 0;
+    box-shadow:
+        inset 0 0 18px 3px rgba(205, 127, 50, 1),
+        inset 0 0 30px 5px rgba(232, 155, 79, 0.8);
+    animation: edge-glow 4s ease-in-out infinite;
+    z-index: 5;
+}
+
+/* Add shimmer effect when both prismatic and shimmer classes present */
+.legend.prismatic.shimmer::before {
+    background: linear-gradient(
+        105deg,
+        transparent 40%,
+        var(--shimmer-sweep-color),
+        transparent 55%
+    );
+    background-size: 200% 100%;
+    animation: edge-glow 4s ease-in-out infinite, shimmer-sweep-bg 6s infinite;
+}
+
+@keyframes shimmer-sweep-bg {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.legend.prismatic::after {
+    inset: -2px;
+    background: linear-gradient(
+        135deg,
+        rgba(136, 85, 80, 1),
+        rgba(205, 127, 50, 1),
+        rgba(232, 155, 79, 1)
+    );
+    background-size: 200% 200%;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    padding: 2px;
+    animation: edge-flow 6s linear infinite;
+    z-index: 10;
+}
+
+@keyframes edge-glow {
+    0%, 100% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes edge-flow {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
 }
