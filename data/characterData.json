@@ -424,6 +424,13 @@
     "rarity": 4,
     "firstBanner": "v1.1"
   },
+  "PEARL":{
+    "name": "Pearl",
+    "element": "Ice",
+    "path": "Elation",
+    "rarity": 5,
+    "firstBanner": "v4.6"
+  },
   "PHAINON": {
     "name": "Phainon",
     "element": "Physical",
