@@ -429,7 +429,8 @@
     "element": "Ice",
     "path": "Elation",
     "rarity": 5,
-    "firstBanner": "v4.6"
+    "firstBanner": "v4.6",
+    "fullPatch": true
   },
   "PHAINON": {
     "name": "Phainon",
