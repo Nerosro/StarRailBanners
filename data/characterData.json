@@ -6,6 +6,14 @@
     "rarity": 5,
     "firstBanner": "v2.1"
   },
+  "AHA": {
+    "name": "Aha",
+    "element": "Quantum",
+    "path": "Elation",
+    "rarity": 5,
+    "firstBanner": "v4.7",
+    "fullPatch": true
+  },
   "AGLAEA": {
     "name": "Aglaea",
     "element": "Lightning",
