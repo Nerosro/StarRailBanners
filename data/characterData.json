@@ -33,7 +33,7 @@
     "element": "Quantum",
     "path": "The_Hunt",
     "rarity": 5,
-    "firstBanner": "Special banner - Fate Collab",
+    "firstBanner": "Fate Collab",
     "collab": true
   },
   "ARGENTI": {
@@ -64,6 +64,14 @@
     "path": "Harmony",
     "rarity": 4,
     "firstBanner": "v1.1"
+  },
+  "ASTRA_YAO": {
+    "name": "Astra Yao",
+    "element": "Quantum",
+    "path": "Harmony",
+    "rarity": 5,
+    "firstBanner": "ZZZ Collab",
+    "collab": true
   },
   "AVENTURINE": {
     "name": "Aventurine",
@@ -177,6 +185,14 @@
     "path": "The_Hunt",
     "rarity": 5,
     "firstBanner": "v1.6"
+  },
+  "ELLEN": {
+    "name": "Ellen",
+    "element": "Ice",
+    "path": "Destruction",
+    "rarity": 5,
+    "firstBanner": "ZZZ Collab",
+    "collab": true
   },
   "EVANESCIA": {
     "name": "Evanescia",
